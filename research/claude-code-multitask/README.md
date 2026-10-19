@@ -4,6 +4,8 @@
 
 This adapts the [Cursor multitask research](../cursor-multitask/README.md) into a proposed Claude workflow. It is a design and adoption plan, with untested configuration templates. Nothing was installed or executed against a model. Research date: **October 19, 2026**; locally inspected CLI: **Claude Code 2.1.303**. [Evidence and sources](sources.md)
 
+For an application that runs Claude CLI, the [native task UI specification](native-task-ui-spec.md) describes creating a progress list for every query and updating a custom card from confirmed `TaskCreate`/`TaskUpdate` results in the JSON stream, without MCP.
+
 ## What transfers from Cursor
 
 Cursor's useful pattern is organizational: keep one conversation responsible for the user's goals, hand substantial work to a worker, and bring results back for integration. Reproduce that relationship before reproducing implementation machinery.
