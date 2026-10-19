@@ -17,6 +17,12 @@ The investigation combines static inspection of shipped JavaScript with official
 
 This repository includes 76 focused source excerpts and small REA receipts. The complete application-graph export is retained locally and omitted from publication. Public evidence checksums identify the files distributed here; original REA Evidence IDs identify the original records, not modified public receipt bytes.
 
+## Claude Code adaptation
+
+[A Cursor-style multitask workflow for Claude Code](research/claude-code-multitask/README.md) turns the research into a proposed native-first CLI workflow: one interactive coordinator, background subagents, and reusable instruction templates. The [implementation plan](research/claude-code-multitask/implementation-plan.md) covers adoption, isolation, integration checks, and when a custom supervisor might be warranted.
+
+This is documentation and untested example configuration, supported by official Claude documentation and local **Claude Code 2.1.303** help. No configuration was installed and no Claude workload was run. It is separate from the Cursor reverse-engineering evidence.
+
 ## Provenance
 
-This is independent research and is not affiliated with or endorsed by Cursor. Third-party excerpts are included for analysis and retain their original ownership. This repository grants no rights to third-party source excerpts or artifacts. No source-code license grant is provided.
+This is independent research and is not affiliated with or endorsed by Cursor or Anthropic. Third-party excerpts are included for analysis and retain their original ownership. This repository grants no rights to third-party source excerpts or artifacts. No source-code license grant is provided.
