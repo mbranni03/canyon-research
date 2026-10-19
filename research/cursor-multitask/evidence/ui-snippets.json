@@ -1,0 +1,279 @@
+{
+  "source_path": "<CURSOR_APP_ROOT>/out/vs/workbench/workbench.glass.main.js",
+  "source_size_bytes": 48353574,
+  "source_sha256": "a7fd1d4c60239dbe5527117d94d7181664525c49a7a294508c59a5082e423014",
+  "offset_convention": "zero-based UTF-8 byte start inclusive/end exclusive; original line numbers one-based",
+  "evidence_type": "Static exact packaged source excerpts; no execution observed; these IDs are local snippet IDs, not REA Evidence IDs.",
+  "snippets": [
+    {
+      "id": "UI01",
+      "seed": "composerPromptMode.js",
+      "start_byte": 26335926,
+      "end_byte_exclusive": 26337826,
+      "start_line": 14674,
+      "end_line": 14674,
+      "snippet_sha256": "5bdfebc519ef0faa74e44a415e17f410289753291b29114a09ee915e3b8f21f6",
+      "text": "bar.react.js\"(){\"use strict\";E(),Rt(),MDe(),ipw()}}),iEe,wVl=L({\"composerPromptMode.js\"(){\"use strict\";E(),iEe=(t,e)=>{if(t===\"plan\"||t===\"debug\"||t===\"chat\")return t;if(t===\"multitask\"&&e?.multitaskEnabled!==!1)return\"multitask\"}}}),Tdv,gOn,iFi,Jxs,CVl,Edv,Idv,vOn,eAs,xdv,TVl,EVl,tAs,nAs,DBe=L({\"glass-mode-utils.js\"(){\"use strict\";E(),l0s(),wVl(),Tdv=[\"plan\",\"debug\",\"multitask\",\"chat\"],gOn=t=>({multitaskEnabled:!t}),iFi=(t,e)=>{const n=iEe(t,e);if(n!==void 0)return n===a0s.id?a0s:H30(n)},Jxs=t=>Tdv.flatMap(e=>{const n=iFi(e,t);return n?[n]:[]}),CVl=t=>Jxs(t).map(e=>({id:e.id,label:e.label,icon:e.icon,color:e.color,placeholder:e.placeholder,description:e.description})),Edv=t=>{if(t.preferProvided)return t.placeholder;if(t.tight){const e=t.modeLabel??t.compactPlaceholder;if(e!==void 0)return e}return t.modePlaceholder??t.placeholder},Idv=\"ui-prompt-input-mode-chip\",vOn=(t,e)=>{const n=t??void 0;return iEe(n)!==void 0&&iEe(n,e)===void 0},eAs=(t,e)=>{const n=[void 0,...Jxs(e).map(o=>o.id)],i=iEe(t,e),r=n.indexOf(i);if(r===-1)return n.find(o=>o!==void 0);const s=(r+1)%n.length;return n[s]},xdv=t=>{const{composerUnifiedMode:e,pendingMode:n,isDraftAgent:i,multitaskEnabled:r}=t,s=iEe(e,{multitaskEnabled:r});return s||(e!==void 0?null:i?n===void 0?null:iEe(n,{multitaskEnabled:r})??null:null)},TVl=t=>t.hasExplicitModeOverride?vOn(t.modeOverride,{multitaskEnabled:t.multitaskEnabled})?null:t.modeOverride??null:xdv({composerUnifiedMode:t.composerUnifiedMode,pendingMode:t.pendingMode,isDraftAgent:t.isDraftAgent,multitaskEnabled:t.multitaskEnabled}),EVl=t=>t===\"plan\"||t===\"chat\"||t===\"debug\"||t===\"multitask\",tAs=t=>EVl(t)?t:void 0,nAs=t=>EVl(t)?t:\"agent\"}});import{createElement as Adv}from\"./react-runtime/react/esm-index-production.js\";function Rdv(t){const{selectedMode:e,onModeSelect:n,onModeApply:i,focus:r,sectionTitle:s=\"Modes\",idPrefix:o=\"glass-mode-\",resolveLeadingIcon:a,modeO"
+    },
+    {
+      "id": "UI02",
+      "seed": "function Rdv(t)",
+      "start_byte": 26337678,
+      "end_byte_exclusive": 26338328,
+      "start_line": 14674,
+      "end_line": 14674,
+      "snippet_sha256": "1c01a5472175a61319ef5d84b1935ed758b755e628c9a5430c33581f8eb5189f",
+      "text": "function Rdv(t){const{selectedMode:e,onModeSelect:n,onModeApply:i,focus:r,sectionTitle:s=\"Modes\",idPrefix:o=\"glass-mode-\",resolveLeadingIcon:a,modeOptions:l}=t;return Jxs(l).map(u=>({id:`${o}${u.id}`,name:u.label,description:u.description,type:\"action\",sectionTitle:s,tooltip:()=>Adv(Nat,{title:$30(u.label),description:u.description}),leadingIcon:a?.(u)??Adv(jt,{name:u.icon,size:12,color:u.color}),onAction:()=>{n(e===u.id?void 0:u.id),r?.()},onPasteApply:i?()=>i(u.id):void 0}))}var IVl=L({\"mode-slash-commands.react.js\"(){\"use strict\";E(),Rt(),lp(),l0s(),DBe()}});import{useCallback as spw}from\"./react-runtime/react/esm-index-production.js\";func"
+    },
+    {
+      "id": "UI03",
+      "seed": "function bxi(t)",
+      "start_byte": 19262603,
+      "end_byte_exclusive": 19262753,
+      "start_line": 9445,
+      "end_line": 9445,
+      "snippet_sha256": "f10799cf3bb34b7509cb69f111c4a8f92f1511775c357dcf67de18d2854cc33d",
+      "text": "function bxi(t){return(t.source===\"cloud\"||t.source===\"draft\")&&zat(t.subagentParentId)&&t.isProject?.value===!0}function fls(t){return jf(t.header)||"
+    },
+    {
+      "id": "UI04",
+      "seed": "function gXv(t)",
+      "start_byte": 29750314,
+      "end_byte_exclusive": 29750514,
+      "start_line": 18398,
+      "end_line": 18398,
+      "snippet_sha256": "a3f9fe68ae03c90516eea02161db8c84eb216ad8be080aefd3b20b01b8fbfaef",
+      "text": "function gXv(t){const e=SEe(3),n=Gm(t?.isProject);let i;return e[0]!==t||e[1]!==n?(i=n===!0&&t!==void 0&&bxi(t),e[0]=t,e[1]=n,e[2]=i):i=e[2],i}function imC(t,e,n,i){const r=SEe(8),s=rPt(t);let o;r[0]!"
+    },
+    {
+      "id": "UI05",
+      "seed": "function mfC(t)",
+      "start_byte": 29773131,
+      "end_byte_exclusive": 29776111,
+      "start_line": 18399,
+      "end_line": 18399,
+      "snippet_sha256": "95e8903d0c0e0991a9e9ed7037b738dcc02e17bf4c7ccaffb81c7abbd6c2e148",
+      "text": "function mfC(t){const e=pfC(37),{agentReference:n,customModesAvailable:i,customModeDisplayById:r,effectiveActiveCustomModeForDisplay:s,onModeOverrideChange:o,isDraftAgent:a,setPendingMode:l,selectedMode:c,modeOptions:u}=t,d=Qe(Zr),h=Qe(hk);let p;e[0]!==r||e[1]!==i||e[2]!==s?(p=M=>{if(!(!M||!i))return r.get(M)??(s?.id===M?s:void 0)},e[0]=r,e[1]=i,e[2]=s,e[3]=p):p=e[3];const f=p;let g;e[4]!==n||e[5]!==d?(g=(M,N,O)=>{const U=n.composerDataHandle.data,j=kCf(N);d.trackEvent(\"custom_mode.lifecycle\",TCf({action:M,activeCustomMode:j,composerId:U.composerId,conversationId:U.composerId,entrypoint:O}))},e[4]=n,e[5]=d,e[6]=g):g=e[6];const _=g;let b;e[7]!==n||e[8]!==_?(b=M=>{const O=n.composerDataHandle.data.activeCustomMode;M!==void 0&&O!=null&&_(\"exited\",O,M),O!=null&&n.composerDataHandle.setData(\"activeCustomMode\",null)},e[7]=n,e[8]=_,e[9]=b):b=e[9];const y=b;let S;e[10]!==n||e[11]!==d||e[12]!==y||e[13]!==h||e[14]!==a||e[15]!==u||e[16]!==o||e[17]!==l?(S=M=>{if(!vOn(M,u)){if(M!==void 0&&y(\"builtin_mode\"),o){o(M);return}if(h.setComposerUnifiedMode(n.composerDataHandle,M??\"agent\"),a&&l(M),M===\"plan\"){const N=n.composerDataHandle.data;d.trackEvent(\"composer.plan_mode.entry_point\",{entrypoint:\"dropdown\",model:N.modelConfig?.modelName??\"unknown\",composerId:N.composerId,invocationID:N.latestChatGenerationUUID})}}},e[10]=n,e[11]=d,e[12]=y,e[13]=h,e[14]=a,e[15]=u,e[16]=o,e[17]=l,e[18]=S):S=e[18];const k=S;let w;e[19]!==n||e[20]!==h||e[21]!==a||e[22]!==o||e[23]!==l?(w=()=>{if(o){o(void 0);return}h.setComposerUnifiedMode(n.composerDataHandle,\"agent\"),a&&l(void 0)},e[19]=n,e[20]=h,e[21]=a,e[22]=o,e[23]=l,e[24]=w):w=e[24];const T=w;let I;e[25]!==n||e[26]!==T||e[27]!==k||e[28]!==u||e[29]!==f||e[30]!==c||e[31]!==_?(I=(M,N,O)=>{const U=O??f(M);if(U){const H=n.composerDataHandle.data.activeCustomMode;if(H!=null&&CCf(H.mode,U)){_(\"exited\",H,N),n.composerDataHandle.setData(\"activeCustomMode\",null),T();return}H&&_(\"exited\",H,N);const W=wXk(U);n.composerDataHandle.setData(\"activeCustomMode\",W),_(\"entered\",W,N),T();return}const j=iEe(M,u);if(j===void 0)return;k(c===j?void 0:j)},e[25]=n,e[26]=T,e[27]=k,e[28]=u,e[29]=f,e[30]=c,e[31]=_,e[32]=I):I=e[32];const A=I;let P;return e[33]!==k||e[34]!==A||e[35]!==f?(P={applyMode:k,resolveCustomModeForDisplay:f,applyModeSelection:A},e[33]=k,e[34]=A,e[35]=f,e[36]=P):P=e[36],P}var ffC=L({\"use-custom-mode-actions.react.js\"(){\"use strict\";E(),ME(),xRn(),Ss(),Yn(),DBe()}});async function gfC(t){if(!sRl({lastCopyData:t.lastCopyData,pastedText:t.pastedText,disableSelectionCopyPaste:t.disableSelectionCopyPaste,allowedUriSchemes:t.allowedUriSchemes}))return!1;const e=t.lastCopyData;if(!e)return!1;try{const n=await Nfh(e);return n?(t.insertMention(t.createMention(n)),!0):!1}catch{return!1}}var vfC=L({\"glass-selection-paste-orchestrator.js\"(){\"use strict\";E(),jDi(),BT()}});import{c as _fC}from\"./react-runtime/react/esm-compiler-runtime-production.js\";function bfC(t){const e=_fC(23),{promptInputRef:n,mcpServers:i,allowedSelectionPas"
+    },
+    {
+      "id": "UI06",
+      "seed": "Qv=gXv(O.header)",
+      "start_byte": 29847027,
+      "end_byte_exclusive": 29848127,
+      "start_line": 18399,
+      "end_line": 18399,
+      "snippet_sha256": "203e45aa34b764ec26da0be9fe3937f7cf921a2e41a7bb5d6dc2d0a6c0a2987f",
+      "text": "Qv=gXv(O.header),c1=xL(()=>gOn(Qv),[Qv]),U_=TVl({composerUnifiedMode:nh,pendingMode:zR,modeOverride:$t,hasExplicitModeOverride:Ft,isDraftAgent:fc,multitaskEnabled:c1.multitaskEnabled}),rA=e3e(void 0),oE=zl(O.composerDataHandle,Aa=>Aa?.data.activeCustomMode?.mode??null),g0=bo?oE:null,f6=g0?.id??null,{applyMode:LL,resolveCustomModeForDisplay:g3,applyModeSelection:V2}=mfC({agentReference:O,customModesAvailable:bo,customModeDisplayById:Rg,effectiveActiveCustomModeForDisplay:g0,onModeOverrideChange:Wt,isDraftAgent:fc,setPendingMode:NL,selectedMode:U_,modeOptions:c1}),XM=zl(O.composerDataHandle,Aa=>{const vm=Aa?.data;return vm?mOi(vm):!1}),F5=xL(()=>{if(mn)return[];const Aa=[];return U_&&Aa.push(U_),f6&&Aa.push(f6),Aa},[f6,mn,U_]),OL=xL(()=>{const Aa=[];for(const vm of F5){const ig=g3(vm);if(ig){Aa.push(SXk(ig));continue}const ty=iFi(vm,c1);ty&&Aa.push({id:vm,label:ty.label,icon:ty.icon,color:ty.color,description:ty.description})}return Aa},[c1,g3,F5]),gx=mn?null:f6??U_??null,FL=xL(()=>{const Aa=g3(gx);return Aa?{label:Aa.label,placeholder:void 0,description:Aa.description}:gx?iFi(gx,c1)??"
+    },
+    {
+      "id": "UI07",
+      "seed": "_3=xL(()=>mn?[]:Rdv",
+      "start_byte": 29848968,
+      "end_byte_exclusive": 29849428,
+      "start_line": 18399,
+      "end_line": 18399,
+      "snippet_sha256": "92445ce5c47b2323c0db9f484f6fce53c29acadb405e32224cd9735fdb20626e",
+      "text": "_3=xL(()=>mn?[]:Rdv({selectedMode:U_,onModeSelect:vm=>{if(!vm){U_&&V2(U_,\"slash_menu\");return}$h(vm),V2(vm,\"slash_menu\")},onModeApply:vm=>{$h(vm),LL(vm)},modeOptions:c1}),[LL,V2,c1,mn,U_,$h]),BL=xL(()=>{const Aa=sl.initialSelections[0];if(Aa)return PHt(Aa,sl.models)},[sl.initialSelections,sl.models])??\"Select a new model\",k9=xL(()=>({id:\"glass-action-model\",name:\"model\",description:BL,omitDescriptionFromSearch:!0,type:\"action\",sectionTitle:\"Open\",trayCateg"
+    },
+    {
+      "id": "UI08",
+      "seed": "setComposerUnifiedMode(t,e)",
+      "start_byte": 40184936,
+      "end_byte_exclusive": 40185716,
+      "start_line": 23517,
+      "end_line": 23517,
+      "snippet_sha256": "a1a1d7961b100713c0645b67c5bfe1251e59c6c5ed826921a705358b868df556",
+      "text": "setComposerUnifiedMode(t,e){if(e===\"debug\"&&this._modelConfigService.getSelectedModelsForComposer(t).length>1)return;const n=this._composerDataService.getComposerData(t),i=n?.unifiedMode;e!==\"chat\"&&e!==\"background\"&&n?.worktreeStartedReadOnly===!0&&n?.gitWorktree===void 0&&n?.pendingCreateWorktree!==!0&&this._composerDataService.updateComposerDataSetStore(t,s=>{s(\"pendingCreateWorktree\",!0),s(\"worktreeStartedReadOnly\",!1)}),this._composerDataService.updateComposerDataSetStore(t,s=>{s(\"unifiedMode\",e)}),i===\"debug\"&&e!==\"debug\"&&this._composerDataService.getComposerCapability(t,lo.QUEUING)?.retryDispatchHeldForDebugRepro(),e===\"debug\"&&this.maybeStartDebugServer()}maybeStartDebugServer(){this._debugServerService.getConfig({surface:YGc(this._workbenchEnvironmentService.i"
+    },
+    {
+      "id": "UI09",
+      "seed": "function wYl(t)",
+      "start_byte": 26809040,
+      "end_byte_exclusive": 26811240,
+      "start_line": 14698,
+      "end_line": 14698,
+      "snippet_sha256": "7d1165500667c7cc0e0831a27741f0a72f3032d2a368e9d85ceb63f8841a5b07",
+      "text": "function wYl(t){const e=t?.data;return e?.isProject===!0&&zat(e.subagentInfo?.parentComposerId)?\"agent\":\"multitask\"}function YAs(t){return wYl(t)===\"multitask\"}async function Kgv({agentReference:t,submitEventCtx:e,message:n,simulatedMsgReason:i,isPlanExecution:r,submitMessageWithModeRollback:s=mf0}){await s({agentReference:t,modeId:wYl(t.composerDataHandle),message:n,options:{simulatedMsgReason:i,forceSubmit:!0,submitEventCtx:e,...r===!0&&{isPlanExecution:r}}})}function yFi({agentReference:t,analyticsService:e,entrypoint:n}){const i=t.composerDataHandle?.data;e.trackEvent(\"composer.multitask_mode.entry_point\",{entrypoint:n,model:i?.modelConfig?.modelName??\"unknown\",composerId:i?.composerId,invocationID:i?.latestChatGenerationUUID})}async function j1w({agentReference:t,submitEventCtx:e,submitMessageWithModeRollback:n}){await Kgv({agentReference:t,submitEventCtx:e,message:Xgv,simulatedMsgReason:Ou.MULTITASK,submitMessageWithModeRollback:n})}async function $1w({agentReference:t,submitEventCtx:e,submitMessageWithModeRollback:n}){await Kgv({agentReference:t,submitEventCtx:e,message:CYl,simulatedMsgReason:Ou.BUILD_IN_PARALLEL,isPlanExecution:!0,submitMessageWithModeRollback:n})}async function Ygv({composerDataHandle:t,submitChatMaybeAbortCurrent:e,submitEventCtx:n}){const i=wYl(t),r=t.data.unifiedMode,s=r!==i;s&&t.setData(\"unifiedMode\",i);try{await e(t.data.composerId,CYl,{ignoreQueuing:!0,isPlanExecution:!0,simulatedMsgReason:Ou.BUILD_IN_PARALLEL,submitEventCtx:n})}catch(o){throw s&&t.setData(\"unifiedMode\",r),o}}var Xgv,CYl,xRt=L({\"startMultitasking.js\"(){\"use strict\";E(),Su(),FYt(),ZB(),Xgv=\"Start multitasking\",CYl=\"Build\"}});import{useEffect as Qgv,useMemo as Zgv,useState as Jgv}from\"./react-runtime/react/esm-index-production.js\";import{jsx as evv}from\"./react-runtime/react/esm-jsx-runtime-production.js\";function H1w(t,e,n,i){const r=e.getComposerBubble(n,i)?.toolFormerData,s=r?.tool===St.CREATE_PLAN?r.params?.plan:void 0;return s?t.getPlanTitle(s):\"Plan\"}function tvv(t,e,n,i){const r=t.getComposerBubble(e,n)?.toolFormerData;if(r?.tool!==St.CREATE_PLAN)return;const s=r,o=s.toolCall?.tool,a=i===\"glass\"&&o?.case===\"createPlanToolCall\"?o.value.result?.planUri:void 0;r"
+    },
+    {
+      "id": "UI10",
+      "seed": "async function mf0(",
+      "start_byte": 21496347,
+      "end_byte_exclusive": 21496647,
+      "start_line": 9649,
+      "end_line": 9649,
+      "snippet_sha256": "617bd5ca1ed5683c7321800106f94b3bb1b22ea29748769e063b34fe0cec4660",
+      "text": "async function mf0({agentReference:t,modeId:e,message:n,options:i}){const r=t.composerDataHandle,s=r.data.unifiedMode,o=s!==e;o&&r.setData(\"unifiedMode\",e);try{await t.submitMessage(n,i)}catch(a){throw o&&r.setData(\"unifiedMode\",s),a}}var ifs,Gkl,FYt=L({\"agentRepositoryService.js\"(){\"use strict\";E()"
+    },
+    {
+      "id": "UI11",
+      "seed": "const Le=j.current;",
+      "start_byte": 34086338,
+      "end_byte_exclusive": 34086568,
+      "start_line": 22815,
+      "end_line": 22815,
+      "snippet_sha256": "9f940b0b7f3143764a451ff2935f9d8a1daf69d4d4d3e35b7ccf2be1d77fa750",
+      "text": "const Le=j.current;if(!Le)return;const qe=we.some(Pe=>Pe.id===Le);((Fe.fullConversationHeadersOnly??[]).some(Pe=>Pe.bubbleId===Le)||!qe)&&(W.current=!1,H(void 0))}),Me));return()=>Re()},G=[n,c,H],e[12]=n,e[13]=c,e[14]=K,e[15]=G):("
+    },
+    {
+      "id": "UI12",
+      "seed": "ge=()=>{if(!Y||W.current)return;",
+      "start_byte": 34088849,
+      "end_byte_exclusive": 34089509,
+      "start_line": 22815,
+      "end_line": 22815,
+      "snippet_sha256": "9e19293a6e72bb7be1f7ec67597087999bdb4ee78635c6690348d94d8a93b2de",
+      "text": "ge=()=>{if(!Y||W.current)return;yFi({agentReference:Y,analyticsService:s,entrypoint:\"queue_tray\"});const Re=Y.getQueueItems()[0]?.id;W.current=Re!==void 0,H(Re),j1w({agentReference:Y,submitEventCtx:{entry:\"click\",source:\"queue\"}}).catch(Me=>{W.current=!1,H(void 0),o.notify({severity:ii.Error,message:D(\"glassQueuedMessageStartMultitaskingFailed\",\"Failed to start multitasking.\"),id:lm.queuedMessageMultitaskFailed}),console.error(\"[useQueuedMessages] start multitasking submit failed:\",Me)})},e[40]=s,e[41]=o,e[42]=Y,e[43]=ge):ge=e[43];const _e=u$(ge);let Ee;e[44]!==u||e[45]!==me||e[46]!==ue||e[47]!==ae||e[48]!==te||e[49]!==be||e[50]!==_e||e[51]!==oe||e[52]"
+    },
+    {
+      "id": "UI13",
+      "seed": "uSl=class{constructor",
+      "start_byte": 21019747,
+      "end_byte_exclusive": 21030047,
+      "start_line": 9625,
+      "end_line": 9625,
+      "snippet_sha256": "1a3fa93e53c2cf7b210ab2b6d1b7c6dcc1a3af6d5af167c9e599cab7b212ec3f",
+      "text": "uSl=class{constructor(t,e=()=>!1,n,i,r){this.subagentComposerService=t,this.isSubagentInterruptEnabled=e,this.cloudSubagentRunner=n,this.experimentService=i,this.backgroundSubagentStopHook=r,this.handles=new Map,this.activeForegroundExecutions=new Map,this.pendingForegroundBackgroundToolCallIds=new Set,this.backgroundRunOrdinalByAgent=new Map,this.interruptedBackgroundRunKeys=new Set,this.pendingIdempotentReplayAgentIds=new Set,this.runningLocalSubagentRunCount=0}async createOrResumeSession(t,e){let n,i;try{if(this.isAwaitBackgroundMode(e))return e.resumeAgentId;const r=await this.withReplayResumeTarget(e);if(e=r.args,r.idempotentReplayResume){if(e.resumeAgentId){if(!this.pendingIdempotentReplayAgentIds.has(e.resumeAgentId)&&this.pendingIdempotentReplayAgentIds.size>=l9f){const a=this.pendingIdempotentReplayAgentIds.values().next().value;a!==void 0&&this.pendingIdempotentReplayAgentIds.delete(a)}this.pendingIdempotentReplayAgentIds.add(e.resumeAgentId),i=e.resumeAgentId}}else await this.handleRunningBackgroundResume(e);if(this.isCloudEnvironment(e)){const a=await this.requireCloudSubagentRunner().createOrResumeCloudSubagent(this.toSubagentExecutorArgs(e,t,r));return this.subagentComposerService.linkParentToSubagent(e.toolCallId,a,e.parentConversationId),a}const s=await this.subagentComposerService.createOrResumeSubagent(this.toSubagentExecutorArgs(e,t,r));return n=s.data.composerId,this.handles.set(n,s),n}catch(r){throw i&&this.pendingIdempotentReplayAgentIds.delete(i),this.toHostError(r,n??e.resumeAgentId)}}async withReplayResumeTarget(t){if(t.resumeAgentId||t.forkAgentId||!t.toolCallId||this.isCloudEnvironment(t))return{args:t};const e=t.parentConversationId?.trim(),n=await this.subagentComposerService.findSubagentForToolCall(t.toolCallId,e||void 0);return n?{args:{...t,resumeAgentId:n},idempotentReplayResume:!0}:{args:t}}async replayRunningBackgroundHandoff(t,e){if(this.pendingIdempotentReplayAgentIds.delete(t)&&this.subagentComposerService.isRunningInBackground({composerId:t}))return this.handles.delete(t),{status:\"background\",backgroundReason:e.runInBackground?UAe.AGENT_REQUEST:UAe.USER_REQUEST,transcriptPath:await this.resolveBackgroundTranscriptPath(t,void 0),toolCallCount:0}}async handleRunningBackgroundResume(t){if(this.isQueueableResumeMode(t)&&this.subagentComposerService.isRunningInBackground({composerId:t.resumeAgentId}))if(t.interrupt===!0&&this.isSubagentInterruptEnabled()){const e=t.parentConversationId??\"\",n=this.cloudSubagentRunner?.isCloudSubagentOwnedByParent(t.resumeAgentId,e)===!0;let i=await this.subagentComposerService.canInterruptSubagentTree({composerId:t.resumeAgentId,parentConversationId:e});if(!i&&n&&(i=!0),!i)throw new Error(tEi);const r=this.currentBackgroundRunKey(t.resumeAgentId);r&&this.interruptedBackgroundRunKeys.add(r),n&&this.cloudSubagentRunner?.markAsInterrupted(t.resumeAgentId),this.subagentComposerService.interruptSubagentTree(t.resumeAgentId)}else throw new Error(tEi)}async runSession(t,e,n,i){try{if(this.isAwaitBackgroundMode(n))return this.awaitBackgroundSubagent(n.resumeAgentId,t.signal);const r=await this.replayRunningBackgroundHandoff(e,n);if(r)return r;if(this.isCloudEnvironment(n))return this.runCloudSession(t,e,n);const s=this.handles.get(e);if(!s)return{status:\"error\",error:`Composer not found for run: ${e}`};const o={args:n,startTimeMs:Date.now()},a=this.toSubagentExecutorArgs(n,t),l=n.continuationConfig,c=this.tryAcquireLocalRunSlot({bypassCap:n.interrupt===!0&&!!n.resumeAgentId});if(c===void 0)return{status:\"error\",error:PMk({maxRunning:this.getMaxRunningLocalSubagents()})};const u={parentComposerId:a.parentConversationId,toolCallId:n.toolCallId};if(n.runInBackground){const k=new AbortController,w={...a,abortSignal:k.signal},T=(l?this.subagentComposerService.runWithContinuation(w,s,l):this.subagentComposerService.runSubagentWithHandle(w,s)).finally(c);return this.handoffToBackground(e,n.toolCallId,T,k,UAe.AGENT_REQUEST,u,o)}const d=new AbortController;let h=!1;const p=()=>{h||d.abort()};t.signal.addEventListener(\"abort\",p,{once:!0}),t.signal.aborted&&p();const f={...a,abortSignal:d.signal},g=(l?this.subagentComposerService.runWithContinuation(f,s,l):this.subagentComposerService.runSubagentWithHandle(f,s)).finally(c);let _;const b=new Promise(k=>{_=k}),y={requestBackground:()=>h||d.signal.aborted?!1:(h=!0,t.signal.removeEventListener(\"abort\",p),_?.(),!0)},S=n.toolCallId;S&&this.subagentComposerService.isLongRunningJobsEnabled()&&(this.activeForegroundExecutions.set(S,y),this.pendingForegroundBackgroundToolCallIds.delete(S)&&y.requestBackground());try{const k=await Promise.race([g.then(T=>({kind:\"completed\",result:T})),b.then(()=>({kind:\"backgrounded\"}))]);if(k.kind===\"backgrounded\")return this.handoffToBackground(e,S,g,d,UAe.USER_REQUEST,u,o);const w=k.result;return w.success?{status:\"completed\",finalMessage:w.finalMessage,toolCallCount:w.toolCallCount??0}:{status:\"error\",error:w.error??\"Unknown subagent error\"}}finally{S&&this.activeForegroundExecutions.get(S)===y&&this.activeForegroundExecutions.delete(S),h||t.signal.removeEventListener(\"abort\",p),this.handles.delete(e)}}catch(r){throw this.pendingIdempotentReplayAgentIds.delete(e),this.toHostError(r,e)}}releaseSession(t){this.handles.delete(t),this.pendingIdempotentReplayAgentIds.delete(t)}async runCloudSession(t,e,n){const i=this.requireCloudSubagentRunner(),r={args:n,startTimeMs:Date.now()},s=this.toSubagentExecutorArgs(n,t),o={parentComposerId:n.parentConversationId,toolCallId:n.toolCallId,suppressTranscriptPath:!0};if(n.runInBackground){const _=new AbortController,b={...s,abortSignal:_.signal},y=i.runCloudSubagent(e,b);return this.handoffToBackground(e,n.toolCallId,y,_,UAe.AGENT_REQUEST,o,r)}const a=new AbortController;let l=!1;const c=()=>{l||a.abort()};t.signal.addEventListener(\"abort\",c,{once:!0}),t.signal.aborted&&c();const u={...s,abortSignal:a.signal},d=i.runCloudSubagent(e,u);let h;const p=new Promise(_=>{h=_}),f={requestBackground:()=>l||a.signal.aborted?!1:(l=!0,t.signal.removeEventListener(\"abort\",c),h?.(),!0)},g=n.toolCallId;g&&this.subagentComposerService.isLongRunningJobsEnabled()&&(this.activeForegroundExecutions.set(g,f),this.pendingForegroundBackgroundToolCallIds.delete(g)&&f.requestBackground());try{const _=await Promise.race([d.then(y=>({kind:\"completed\",result:y})),p.then(()=>({kind:\"backgrounded\"}))]);if(_.kind===\"backgrounded\")return this.handoffToBackground(e,g,d,a,UAe.USER_REQUEST,o,r);const b=_.result;return r9f(b)}finally{g&&this.activeForegroundExecutions.get(g)===f&&this.activeForegroundExecutions.delete(g),l||t.signal.removeEventListener(\"abort\",c)}}forceBackgroundByToolCallId(t){const e=this.activeForegroundExecutions.get(t);let n;if(e)n=e.requestBackground()===!0?n7t.ACCEPTED:n7t.NOT_FOUND;else{if(this.pendingForegroundBackgroundToolCallIds.size>=a9f){const i=this.pendingForegroundBackgroundToolCallIds.values().next().value;i!==void 0&&this.pendingForegroundBackgroundToolCallIds.delete(i)}this.pendingForegroundBackgroundToolCallIds.add(t),n=n7t.ACCEPTED}return new SEr({status:n})}async handoffToBackground(t,e,n,i,r,s,o){const a=this.nextBackgroundRunKey(t),l=n.catch(u=>{const d=Gg(u);return console.error(\"[subagentExecutor] Background subagent failed\",{agentId:t,toolCallId:e,errorType:u instanceof Error?u.name:\"unknown\",errorMessage:d}),{success:!1,composerId:t,error:d}});this.subagentComposerService.registerBackgroundPromise({composerId:t,promise:l,abortController:i,metadata:s}),e!==void 0?l.then(u=>{const d=this.interruptedBackgroundRunKeys.delete(a);!u.success&&!d&&!this.subagentComposerService.hasQueuedResumePending({composerId:t})&&this.subagentComposerService.notifyBackgroundFailure({toolCallId:e,error:u.error??\"Unknown subagent error\",parentComposerId:s?.parentComposerId})}):l.finally(()=>{this.interruptedBackgroundRunKeys.delete(a)});const c=this.backgroundSubagentStopHook;return c&&e&&o&&l.then(u=>c.run(md0({agentId:t,toolCallId:e,parentComposerId:s?.parentComposerId??o.args.parentConversationId??\"\",launch:o,result:u,aborted:i.signal.aborted}))),this.handles.delete(t),{status:\"background\",backgroundReason:r,transcriptPath:await this.resolveBackgroundTranscriptPath(t,s),toolCallCount:0}}async resolveBackgroundTranscriptPath(t,e){if(e?.suppressTranscriptPath!==!0)return e?.transcriptPath??await this.subagentComposerService.resolveBackgroundTranscriptPath(t)}isCloudEnvironment(t){return t.environment===_ve.CLOUD}requireCloudSubagentRunner(){if(!this.cloudSubagentRunner)throw new Error(\"Cloud subagent runner is not available.\");return this.cloudSubagentRunner}nextBackgroundRunKey(t){const e=(this.backgroundRunOrdinalByAgent.get(t)??0)+1;return this.backgroundRunOrdinalByAgent.set(t,e),`${t}:${e}`}currentBackgroundRunKey(t){const e=this.backgroundRunOrdinalByAgent.get(t);return e===void 0?void 0:`${t}:${e}`}isQueueableResumeMode(t){return!!(t.resumeAgentId&&typeof t.prompt==\"string\"&&t.prompt.trim().length>0)}isAwaitBackgroundMode(t){if(!this.subagentComposerService.isLongRunningJobsEnabled()||!!!(t.resumeAgentId&&(typeof t.prompt!=\"string\"||t.prompt.trim().length===0)&&t.readonly===!0&&t.runInBackground!==!0))return!1;if((t.parentConversationId??\"\").trim().length===0)throw new Error(`Missing parentConversationId for subagent await/status check (subagentId: ${t.resumeAgentId})`);return!0}async awaitBackgroundSubagent(t,e){const n={status:\"error\",error:\"Await timed out while task is still running\"};if(e.aborted)return n;if(!this.subagentComposerService.isRunningInBackground({composerId:t}))return{status:\"error\",error:\"No running background subagent found for given id\"};try{const i=await this.subagentComposerService.waitForBackgroundSubagent({composerId:t,abortSignal:e});return i.success?{status:\"completed\",finalMessage:i.finalMessage,toolCallCount:i.toolCallCount??0}:{status:\"error\",error:i.error??\"Unknown subagent error\"}}catch(i){if(e.aborted)return n;throw i}}toSubagentExecutorArgs(t,e,n){return this.validateWatchVideoAttachments(t),cSl(t,e,n)}validateWatchVideoAttachments(t){if(t.subagentType!==c9f||t.selectedContext===void 0)return;const e=t.selectedContext.selectedVideos??[],n=this.getGeminiVideoAttachmentConfigParam(\"localMaxVideoAttachmentsPerRequest\",u9f);if(e.length>n){const s=n===1?\"1 file\":`${n} files`;throw new Error(`Video attachments are limited "
+    },
+    {
+      "id": "UI14",
+      "seed": "registerBackgroundPromise({composerId:t,promise:e",
+      "start_byte": 21277317,
+      "end_byte_exclusive": 21280607,
+      "start_line": 9631,
+      "end_line": 9631,
+      "snippet_sha256": "17485e9cb1ea54eca5821cef54595c7d7f8cb8dd34e69051e12aa24f549254dc",
+      "text": "registerBackgroundPromise({composerId:t,promise:e,abortController:n,metadata:i}){const r=this._lifecycleStore.startRun(t,{abort:n?()=>n.abort():void 0}),{parentComposerId:s,title:o}=i??{},a=Ele(o)??this._resolveBackgroundSubagentTitleFromToolCallId(i?.toolCallId,s),l=a??\"Background subagent\",c=i&&{...i,...a?{title:a}:{}};if(s){const g=this._backgroundWorkService.backgroundWorkItems.value.find(_=>_.kind===\"subagent\"&&_.id===t)?.startTimeMs;this._backgroundWorkService.upsertSubagentWork({id:t,kind:\"subagent\",composerId:s,title:l,startTimeMs:g??Date.now(),subagentComposerId:t})}const u={runId:r,promise:e,metadata:c,disposition:\"deliver\",settled:!1},d=()=>u.disposition===\"suppress\",h=g=>u.disposition===\"cancel\"?{success:!1,composerId:t,error:\"Subagent was aborted by the user\",terminationReason:\"aborted\"}:g,p=()=>{this._backgroundPromises.get(t)?.runId===r&&this._backgroundPromises.delete(t),this._backgroundAbortControllers.get(t)?.runId===r&&this._backgroundAbortControllers.delete(t),this._lifecycleStore.finishRun(t,r),this._releaseLifecycleIfIdle(t)},f=async g=>{try{if(d()){this._dropDeferredSubagentCompletion(t,r);return}this.hasQueuedResumePending({composerId:t})?this._storeDeferredSubagentCompletion(t,r,g):(this._dropDeferredSubagentCompletion(t,r),await this._enqueueSubagentCompletion(g,c).catch(()=>{}))}finally{this._resolveBackgroundWaiters(u),p()}};e.then(g=>{const _=h(g);u.settled=!0,u.result=_,f(_)},g=>{u.settled=!0,u.result=h({success:!1,composerId:t,error:\"Background subagent promise rejected\",terminationReason:\"error\"}),f(u.result)}),this._backgroundPromises.set(t,u),n&&this._backgroundAbortControllers.set(t,{runId:r,abortController:n})}async _enqueueSubagentCompletion(t,e){if(!this.isLongRunningJobsEnabled())return;const i=this._composerDataService.getHandleIfLoaded(t.composerId),r=this._backgroundWorkService.backgroundWorkItems.value.find(_=>_.kind===\"subagent\"&&_.id===t.composerId),s=i?.data.subagentInfo?.parentComposerId,o=t.success?\"success\":t.terminationReason===\"aborted\"?\"aborted\":\"error\",a=t.success?t.finalMessage:t.error,l=Ele(r?.title),c=Ele(e?.title)??(l===\"Background subagent\"?void 0:l)??this._resolveBackgroundSubagentTitle(i)??\"Background subagent\",u=await this._resolveBackgroundOutputPath(t.composerId,e),d=e?.toolCallId??i?.data.subagentInfo?.toolCallId,h=e?.parentComposerId??i?.data.subagentInfo?.parentComposerId;this.markParentTaskBubbleCompleted({parentComposerId:h,toolCallId:d,status:o,...o===\"error\"?{error:a}:{}});const p={taskId:t.composerId,kind:\"subagent\",status:o,title:c,...a?{detail:a}:{},...u?{outputPath:u}:{},subagentId:t.composerId,...d?{toolCallId:d}:{},reason:\"task_finished\"},f=e?.parentComposerId??r?.composerId??s??t.composerId;if(!f)return;const g={composerId:f,...p};this._backgroundWorkService.enqueue({conversationId:f,id:g.taskId,source:\"subagent\",payload:g})}async _resolveBackgroundOutputPath(t,e){if(e?.suppressTranscriptPath!==!0)return e?.transcriptPath??await this.resolveBackgroundTranscriptPath(t).catch(()=>{})}_deferredCompletionKey(t,e){return`${t}:${e}`}_markBackgroundCompletionsSuppressedForTree(t){const e=this._backgroundPromises.get(t);e&&(e.disposition=\"suppress\");const n=this._composerDataService.getHandleIfLoaded(t);if(!n)return;const i=this._composerDataService.getComposerDa"
+    },
+    {
+      "id": "UI15",
+      "seed": "enqueueOrMergeResumePrompt({composerId:t",
+      "start_byte": 21281330,
+      "end_byte_exclusive": 21282550,
+      "start_line": 9631,
+      "end_line": 9631,
+      "snippet_sha256": "99b70c67ac11b487c75492db94dc1ab5eb1fd0f7c0e6494f35f213db39c3a367",
+      "text": "enqueueOrMergeResumePrompt({composerId:t,prompt:e,toolCallId:n,parentConversationId:i,subagentType:r,modelId:s,credentials:o,readonly:a,mode:l,continuationConfig:c,selectedContext:u}){const d=this._lifecycleStore.getState(t),h=d.status===\"running\"||d.status===\"runningWithQueuedResume\"?d.runId:this._backgroundPromises.get(t)?.runId;this._lifecycleStore.queueResume(t,{queuedResume:{prompt:e,toolCallIds:[n],runToolCallId:n,parentConversationId:i,subagentType:r,modelId:s,credentials:o,readonly:a,mode:l,continuationConfig:c,selectedContext:u},targetRunId:h,mergeQueuedResume:(p,f)=>{const g=qMk({existingPrompt:p.prompt,newPrompt:f.prompt});return{...f,prompt:g,parentConversationId:p.parentConversationId,credentials:p.credentials??f.credentials,selectedContext:Nh0(p.selectedContext,f.selectedContext),toolCallIds:p.toolCallIds.includes(f.runToolCallId)?p.toolCallIds:[...p.toolCallIds,f.runToolCallId]}}}),this._linkParentToSubagent(n,t,i)}async waitForBackgroundSubagent({composerId:t,abortSignal:e}){const n=this.isLongRunningJobsEnabled(),i=this._backgroundPromises.get(t);if(i){if(n){const s=await this._waitForBackgroundEntry(i,e);return await this._flushTranscriptAfterAwaitCompletion(s.composerId||t),s}const "
+    },
+    {
+      "id": "UI16",
+      "seed": "function foI(t,e)",
+      "start_byte": 40037634,
+      "end_byte_exclusive": 40038634,
+      "start_line": 23491,
+      "end_line": 23491,
+      "snippet_sha256": "2612f2975a8040cb94497d7ff9fa22c3e2b9932a21cb74bb4293ed90048130a3",
+      "text": "function foI(t,e){const n=VAk(t.reason),i=t.notificationContext===\"user_driven_interactive_child\"?A$o.USER_DRIVEN_INTERACTIVE_CHILD:void 0;return new DTr({taskId:t.taskId,kind:poI(t.kind),status:moI(t.status),title:t.title,detail:t.detail,outputPath:t.outputPath,threadId:e,subagentId:t.subagentId,toolCallId:t.toolCallId,...n!==void 0?{reason:n}:{},...i!==void 0?{notificationContext:i}:{}})}function goI(t){return t.map(n=>{const i=n.title?.trim(),r=n.taskId?.trim(),s=i!==void 0&&i.length>0?i:void 0,o=r!==void 0&&r.length>0?r:void 0;if(!(s===void 0&&o===void 0))return{...s!==void 0?{title:s}:{},...o!==void 0?{taskId:o}:{}}}).filter(n=>n!==void 0)[0]}function voI(t){let e;return()=>(e!==void 0||(e=t()),e)}function _oI(t,e,n,i,r,s,o,a,l,c,u,d){const h=n.invokeFunction(P=>{try{return P.get(xlt)}catch{return}}),p=()=>RRb({isLocalMode:Rl.localMode,isGlass:u.isGlass===!0,isIndexSearchEnabled:()=>c.checkFeatureGate(\"local_agent_transcript_search_in_glass\",{disableExposureLog:!0}),isConversation"
+    },
+    {
+      "id": "UI17",
+      "seed": "_buildBackgroundTaskCompletionAction(t,e)",
+      "start_byte": 40117805,
+      "end_byte_exclusive": 40118072,
+      "start_line": 23503,
+      "end_line": 23503,
+      "snippet_sha256": "7e51ced019871ded6fdef2b2570c8af53f94c8dd2157f81874d7aaddd606ffd9",
+      "text": "_buildBackgroundTaskCompletionAction(t,e){return new FI({action:{case:\"backgroundTaskCompletionAction\",value:new D$o({completions:t.map(n=>foI(n,e[n.taskId]??(n.subagentId===void 0?void 0:e[n.subagentId])))})}})}async _runWakeupAction(t,e,n){var i=[];try{const o=e.co"
+    },
+    {
+      "id": "UI18",
+      "seed": "async _runWakeupAction(t,e,n)",
+      "start_byte": 40118017,
+      "end_byte_exclusive": 40122947,
+      "start_line": 23503,
+      "end_line": 23503,
+      "snippet_sha256": "e5449845fbc8b0ce4eff8f158e93c4859eb26971d1966a56b0934b84cfd5143c",
+      "text": "async _runWakeupAction(t,e,n){var i=[];try{const o=e.composerId,a=this._composerIdToAccessor.get(o);if(!a)return\"skipped\";const l=this._composerDataService.getComposerData(e),c=l?.conversationState??new mg,u=n.abortController.signal,[d,h]=this._aiService.registerNewGeneration({generationUUID:xi(),metadata:{type:\"composer\",textDescription:\"Background agent wakeup\",isNAL:!0}}),p=()=>{h.abort(u.reason)};u.aborted?p():u.addEventListener(\"abort\",p,{once:!0});let f=!1,g=!1,_=!1,b=!1;const y=CK(i,{[Symbol.dispose]:()=>{u.removeEventListener(\"abort\",p),this._aiService.removeInprogressAIGeneration(d),n.afterSettled?.({isCompleted:_,isAborted:g,errored:f})}});if(h.signal.aborted)return\"skipped\";const S=ZKt(t,{requestId:d,composerId:o}),k=CK(i,Oy(S.withName(\"agent.request\"))),T=CK(i,Oy(k.ctx.withName(n.spanName))).ctx;let I,A;try{if(I=await n.prepare?.(T,d),I===\"skipped\"||h.signal.aborted||(await this._reactiveStorageService.whenApplicationUserByokSecretsHydrated(),h.signal.aborted)||(A=await this._aiService.getModelDetails({composerId:o}),h.signal.aborted))return\"skipped\"}catch(W){throw WRb(W,d),W}const P=e.data._checkpointEpoch??0;let M=!1;const N=W=>{this.handleConversationCheckpoint(W,e,A,P,T)},O=n.onCheckpoint===void 0?N:async W=>{await n.onCheckpoint?.({checkpoint:W,applyDefault:()=>N(W)})},U=()=>{const W={...Q_(),type:qr.AI,text:\"\",createdAt:new Date().toISOString()};return this._composerDataService.appendComposerBubbles(e,[W]),this._composerDataService.updateComposerDataSetStore(e,z=>{z(\"status\",\"generating\"),z(\"generatingBubbleIds\",K=>K?.includes(W.bubbleId)?K:[...K??[],W.bubbleId])}),W.bubbleId},j=n.buildHooks({createEmptyAiBubble:U,kickoffMessageId:l?.createdFromBackgroundAgent?.kickoffMessageId}),$={onInteractionUpdate:W=>{W.message.case===\"userMessageAppended\"&&(M=!0),j.onInteractionUpdate(W)}};if(n.beforeClaim?.()===!1||h.signal.aborted)return\"skipped\";b=!0,this._composerDataService.updateComposerDataSetStore(e,W=>{W(\"chatGenerationUUID\",d),W(\"latestChatGenerationUUID\",d),W(\"lastUpdatedAt\",Date.now())});const H=Y_l({composerEventService:this._composerEventService,isGlass:!!this._environmentService.isGlass,generationUUID:d,workspaceIdentifier:e.data.workspaceIdentifier??_w(this._workspaceContextService.getWorkspace()),origin:\"wakeup\"});H.markSent();try{return await this._agentService.runAgentLoop(T,{userText:\"\",mode:this.getModeFromComposerMode(l?.unifiedMode??\"agent\"),selectedContext:new Xse,requestContext:I?.requestContext,requestContextDecoration:ORb({smartModeClassifierAutoModeEnabled:sms(this._composerModesService,o)}),subagentSmartModeAutoRun:G4f(this._composerModesService,o),modelDetails:A,generationUUID:d,conversationId:o,messageId:n.messageId,abortController:h,onCheckpoint:O,resourceAccessor:a,conversationState:c,composerHandle:e,hooks:$,conversationActionOverride:n.action,subagentTypeName:void 0}),_=!0,ads({composerHandle:e,isGlass:!!this._environmentService.isGlass,composerDataService:this._composerDataService,composerViewsService:this._composerViewsService,glassActiveAgentService:this._glassActiveAgentService}),await n.afterCompleted?.(),\"completed\"}catch(W){if(h.signal.aborted&&(n.skipOn===\"abort\"||W instanceof IS))return g=!0,n.appendedMessageIsDelivered===!0&&M?\"completed\":\"skipped\";throw f=!0,WRb(W,d),W}finally{this._pendingGoalMutations.delete(o),H.finish({composerId:o,isErrored:f,isAborted:g,isCompleted:_,diffEvents:[],startTime:void 0,generationUUID:d});const W=this._composerDataService.getComposerData(e),z=W?.chatGenerationUUID;z===d&&this._composerDataService.updateComposerDataSetStore(e,Y=>{Y(\"chatGenerationUUID\",void 0)});const K=W?.latestChatGenerationUUID;b&&!(z!==void 0&&z!==d||K!==void 0&&K!==d)&&(_||g||f)&&this._onDidSettleWakeupTurn.fire({composerId:o,generationUUID:d,status:_?\"completed\":f?\"error\":\"aborted\"}),n.finalizeStatusOnFailure===!0&&(g||f)&&this._finalizeStatusAfterFailedBackgroundCompletion(e,g?\"user\":\"error\"),this._pendingAwaitTaskIdsByComposerId.delete(o),this._maybeDispatchBackgroundCompletions(o)}}catch(o){var r=o,s=!0}finally{Wee(i,r,s)}}async _runBackgroundTaskCompletionAction(t,e,n,i){const r=e.composerId,s=new AbortController;this._completionAbortControllers.set(r,s);const o=[...i];return this._runWakeupAction(t,e,{spanName:\"dispatchBackgroundTaskCompletionAction\",action:n,messageId:`background-completion-${xi()}`,abortController:s,skipOn:\"cancelled-error\",prepare:async a=>(await this._startMissingLocalExtensionHostsBounded(s.signal),await Lze(this._asyncOperationRegistry,r,\"request_context_provider_wait\",()=>this._waitForPushRequestContextProviderRegistration(a,s.signal),{enteredAt:Date.now()}),{}),buildHooks:({createEmptyAiBubble:a,kickoffMessageId:l})=>{const c=voI(a);return{onInteractionUpdate:u=>{if(this._handleAwaitCompletionSuppressionUpdate(r,u),u.message.case===\"userMessageAppended\"){const d=u.message.value.userMessage,h=d?.isSimulatedMsg===!0&&d.simulatedMsgReason===Ou.BACKGROUND_"
+    },
+    {
+      "id": "UI19",
+      "seed": "async _runBackgroundTaskCompletionAction(t,e,n,i)",
+      "start_byte": 40122075,
+      "end_byte_exclusive": 40123505,
+      "start_line": 23503,
+      "end_line": 23503,
+      "snippet_sha256": "ef923738f2e06f4c88f01ad2acce0178ca80ce8ee5f0add8f03f5ac3b4ae270d",
+      "text": "async _runBackgroundTaskCompletionAction(t,e,n,i){const r=e.composerId,s=new AbortController;this._completionAbortControllers.set(r,s);const o=[...i];return this._runWakeupAction(t,e,{spanName:\"dispatchBackgroundTaskCompletionAction\",action:n,messageId:`background-completion-${xi()}`,abortController:s,skipOn:\"cancelled-error\",prepare:async a=>(await this._startMissingLocalExtensionHostsBounded(s.signal),await Lze(this._asyncOperationRegistry,r,\"request_context_provider_wait\",()=>this._waitForPushRequestContextProviderRegistration(a,s.signal),{enteredAt:Date.now()}),{}),buildHooks:({createEmptyAiBubble:a,kickoffMessageId:l})=>{const c=voI(a);return{onInteractionUpdate:u=>{if(this._handleAwaitCompletionSuppressionUpdate(r,u),u.message.case===\"userMessageAppended\"){const d=u.message.value.userMessage,h=d?.isSimulatedMsg===!0&&d.simulatedMsgReason===Ou.BACKGROUND_TASK_COMPLETION;h&&this._composerDataService.updateComposerDataSetStore(e,g=>{g(\"status\",\"generating\")});const p=h?o.shift():void 0,f=h?c:a;this.handleUserMessageAppended(u.message.value,r,f,l,p)}this._fireInteractionUpdates(r,[u])}}},afterSettled:()=>{this._completionAbortControllers.delete(r)}})}cancelBackgroundCompletionAction(t){this._completionAbortControllers.get(t)?.abort(),this._subscriptionWakeupAbortControllers.get(t)?.abort()}_hasLiveTurn(t){const e=t.chatGenerationUUID;return t.status===\"generating\"||t.conversationActionManager!==void 0||e!"
+    },
+    {
+      "id": "UI20",
+      "seed": "async _maybeDispatchBackgroundCompletions(t)",
+      "start_byte": 40126652,
+      "end_byte_exclusive": 40132132,
+      "start_line": 23503,
+      "end_line": 23503,
+      "snippet_sha256": "5f0385d2bb9d694f9839393d1cf7c81ff8f6492336773a8a329527d51206b592",
+      "text": "async _maybeDispatchBackgroundCompletions(t){if(!this._ownsBackgroundCompletion(this._composerDataService.getComposerDataIfLoaded(t)?.workspaceIdentifier))return;const e=this._experimentService.checkFeatureGate(\"long_running_jobs\",{disableExposureLog:!1}),n=this._completionDispatchInFlightComposerIds.has(t),i=this._backgroundWorkService.hasPendingCompletions(t);if(n||!i)return;const r=this._composerDataService.getHandleIfLoaded(t);if(!r)return;const s=this._composerDataService.getComposerData(r);if(s?.isArchived===!0){this.silenceBackgroundCompletionsForArchivedComposer(t);return}if(s?.isNAL===!0){this._completionDispatchInFlightComposerIds.add(t);try{for(;this._backgroundWorkService.hasPendingCompletions(t);){const o=this._composerDataService.getHandleIfLoaded(t);if(!o)return;const a=this._composerDataService.getComposerData(o);if(a?.isArchived===!0){this.silenceBackgroundCompletionsForArchivedComposer(t);return}if(a?.isNAL!==!0||this._hasLiveTurn(a)||this._composerDataService.getIsBlockingUserDecision(o)||this._composerUtilsService.getHasPendingQuestionnaireAwaitingInput(o)||!this._ownsBackgroundCompletion(a.workspaceIdentifier))return;const l=this._backgroundWorkService.pull(t);if(l.length===0)return;const c=this._pendingAwaitTaskIdsByComposerId.get(t)??new Set,u=l.filter(_=>(e||_.source===\"interactive-child\"||_.payload.notificationContext===\"user_driven_interactive_child\")&&!c.has(_.payload.taskId.trim())),d=new Set(u.map(_=>_.id)),h=l.filter(_=>!d.has(_.id));if(this._backgroundWorkService.nack(h.map(_=>_.id),{requeue:!0}),u.length===0)return;let p=u;if(fKi(a)&&(p=this._dropUserCancelledSubagentWakeups(u)),p.length===0)return;const f=fKi(a),g=p.map(_=>_.payload);fsI({composerDataHandle:o,composerDataService:this._composerDataService,completions:g});try{const _=this._composerDataService.getComposerData(o)?.conversationState,b=XsI(_),y=this._buildBackgroundTaskCompletionAction(g,b),S=g.map(w=>goI([w]));if(await this._runBackgroundTaskCompletionAction(Yp(),o,y,S)===\"completed\"){this._backgroundWorkService.ack(p.map(T=>T.id));const w=p.map(T=>T.payload.outputPath).filter(T=>T!==void 0&&ibd(T)).sort();await this._commitPairedCloudChildInboxCursor(o,w)}else if(this._composerDataService.getComposerData(o)?.isArchived===!0){this.silenceBackgroundCompletionsForArchivedComposer(t);return}else{this._requeueBackgroundCompletionWakeups(o,p);return}}catch(_){if(this._composerDataService.getComposerData(o)?.isArchived===!0){this.silenceBackgroundCompletionsForArchivedComposer(t),HRb(_)&&this._finalizeStatusAfterFailedBackgroundCompletion(o,\"user\");return}if(HRb(_)){const I=this._composerDataService.getComposerData(o);this._finalizeStatusAfterFailedBackgroundCompletion(o,I?.abortReason===\"remote_control\"?\"remote_control\":\"user\");const{kept:A,composerData:P}=this._requeueBackgroundCompletionWakeups(o,p);this._structuredLogService.info(\"composer\",\"Background task completion dispatch aborted by user; requeued\",{composerId:t,completionTaskIds:A.map(M=>M.payload.taskId),dispatchableCount:A.length,status:P?.status});return}const{kept:b,composerData:y}=this._requeueBackgroundCompletionWakeups(o,p),S=_ instanceof Error?_:new Error(String(_));this._structuredLogService.error(\"composer\",\"Background task completion dispatch failed\",S,{composerId:t,completionTaskIds:b.map(I=>I.payload.taskId),dispatchableCount:b.length,modelName:a.modelConfig?.modelName,maxMode:a.modelConfig?.maxMode,status:y?.status}),this._structuredLogService.info(\"composer\",\"Requeued background task completions after failed dispatch\",{composerId:t,completionTaskIds:b.map(I=>I.payload.taskId)});const k=this._composerDataService.getComposerData(o),w=k?.status===\"aborted\"&&k.abortReason===\"error\",T=fKi(k)&&!f;if(!w&&!T){const I=_ instanceof KEt,A=I?_.displayInfo:void 0,P=A?.title??\"Error resuming chat\",M=A?.detail??\"A background task finished, but the chat couldn't resume. Try again in a moment.\",N={...Q_(),type:qr.AI,text:\"\",createdAt:new Date().toISOString(),errorDetails:{title:P,message:M,requestId:ZsI(S),stackTrace:S.stack,isRetryable:I||JsI(S),extraButtons:[{id:\"retry-background-completion\",label:\"Resume\",variant:\"primary\",callback:()=>{this._retryBackgroundCompletions(t,N.bubbleId)}}]}};await this._composerDataService.appendComposerBubbles(o,[N]),this._composerViewsService.triggerScrollToBottom(o),ads({composerHandle:o,isGlass:!!this._environmentService.isGlass,composerDataService:this._composerDataService,composerViewsService:this._composerViewsService,glassActiveAgentService:this._glassActiveAgentService}),I&&this._extensionHostExitAlertService.reportStoppedAgent(t)}this._finalizeStatusAfterFailedBackgroundCompletion(o,\"error\");return}}}finally{this._completionDispatchInFlightComposerIds.delete(t),this._backgroundWorkService.hasPendingCompletions(t)||this.runIdleHooks(t)}}}async _runGoalContinuationAction(t,e,n,i){const r=e.composerId,s=this._composerDataService.getComposerData(e)?.conversationState?.goalState?.continuationCount??0;return this._runWakeupAction(t,e,{spanName:\"dispatchGoalContinuationAtIdle\",action:new FI({action:{case:\"goalContinuationAction\",value:new $$o}}),messageId:xi(),abortController:i,skipOn:\"abort\",finalizeStatusOnFailure:!0,prepare:async o=>(await Lze(this._asyncOperationRegistry,r,\"request_context_provider_wait\",()=>this._waitForPushRequestContextProviderRegistration(o),{enteredAt:Date.now()}),{}),buildHooks:({createEmptyAiBubble:o,kickoffMessageId:a})=>({onInteractionUpdate:l=>{l.message.case===\"use"
+    },
+    {
+      "id": "UI21",
+      "seed": "function Gus(",
+      "start_byte": 19909293,
+      "end_byte_exclusive": 19909438,
+      "start_line": 9536,
+      "end_line": 9536,
+      "snippet_sha256": "85deddcdc8c556d9a9b71b22c8679365ac661888e04336b9ece334552f5de9fb",
+      "text": "function Gus({isGlass:t,currentWorkspaceId:e,composerWorkspaceIdentifier:n}){return!t||n?.id===e}var s5,qus,Rgl,C$=L({\"composerAgent.js\"(){\"use s"
+    },
+    {
+      "id": "UI22",
+      "seed": "onDidEnqueueCompletion(({composerId:ue})",
+      "start_byte": 40051924,
+      "end_byte_exclusive": 40052164,
+      "start_line": 23491,
+      "end_line": 23491,
+      "snippet_sha256": "56aeba23d8bf50c734741b77c2f126cac4fc182b5cf873e2d0f8f422762d454c",
+      "text": "._register(this._backgroundWorkService.onDidEnqueueCompletion(({composerId:ue})=>{this.cancelIdleHooks(ue),this._maybeDispatchBackgroundCompletions(ue)})),this._cursorAgentHostEnablementService.isCursorAgentHostEnabled()||(this._register(th"
+    },
+    {
+      "id": "UI23",
+      "seed": "status],onChange:({deps:[e]})=>{e!==\"generating\"",
+      "start_byte": 40058246,
+      "end_byte_exclusive": 40058596,
+      "start_line": 23491,
+      "end_line": 23491,
+      "snippet_sha256": "2303f1da2faac235c6ff125ce7255e94a8014e907ce2631fe16a82aa70551ce0",
+      "text": "nuallyDisposed({deps:[()=>this._composerDataService.loadedComposers.getById(t)?.status],onChange:({deps:[e]})=>{e!==\"generating\"&&this._backgroundWorkService.hasPendingCompletions(t)&&(this.cancelIdleHooks(t),this._maybeDispatchBackgroundCompletions(t))}})}_setupComposerWorktreeListener(t,e){if(this._store.isDisposed||!ws(()=>this._composerDataServ"
+    },
+    {
+      "id": "UI24",
+      "seed": "mn=!gt.modes",
+      "start_byte": 29836526,
+      "end_byte_exclusive": 29836676,
+      "start_line": 18399,
+      "end_line": 18399,
+      "snippet_sha256": "6ad15a5be8943d31e0c49e94307b0e6f0a6ba10faab9bcf37b5d0b7e3dcd1266",
+      "text": "n);const Zt=e3e(Et),Sn=e3e(0),mn=!gt.modes,xn=!gt.modelSelection||rAs(O),ui=gt.mcp?ge:void 0,zn=kvC(gt,I),wi=uFn({agentReference:O,statusReactive:b}),"
+    },
+    {
+      "id": "UI25",
+      "seed": "function zat(",
+      "start_byte": 19262464,
+      "end_byte_exclusive": 19262614,
+      "start_line": 9445,
+      "end_line": 9445,
+      "snippet_sha256": "c1594d60b79d5915fd3a62d5c4e879dd36b7489dc8422885355b360d162ed651",
+      "text": "function zat(t){return t===void 0||t.length===0}function jf(t){return t.source===\"cloud\"&&zat(t.subagentParentId)&&t.isProject?.value===!0}function bx"
+    },
+    {
+      "id": "UI26",
+      "seed": "a9f=100,l9f=100",
+      "start_byte": 21019684,
+      "end_byte_exclusive": 21019794,
+      "start_line": 9625,
+      "end_line": 9625,
+      "snippet_sha256": "338d49ad9250c23a3de92b9449f4d510e512a5f8129e398416b57ce43de78087",
+      "text": "a9f=100,l9f=100,c9f=\"watchVideo\",u9f=5,d9f=35*1024*1024,h9f=32,uSl=class{constructor(t,e=()=>!1,n,i,r){this.su"
+    },
+    {
+      "id": "UI27",
+      "seed": "getMaxRunningLocalSubagents(){",
+      "start_byte": 21030455,
+      "end_byte_exclusive": 21031175,
+      "start_line": 9625,
+      "end_line": 9625,
+      "snippet_sha256": "d31f4e9c101244499ab5a294a9319f490ede3df3768bd772effad1ff42e10d08",
+      "text": "getMaxRunningLocalSubagents(){const t=this.experimentService?.getDynamicConfigParam(\"local_subagent_limits\",\"maxRunning\",{disableExposureLog:!1});return typeof t==\"number\"&&Number.isFinite(t)&&t>=1?Math.floor(t):h9f}tryAcquireLocalRunSlot(t){if(t?.bypassCap!==!0&&this.runningLocalSubagentRunCount>=this.getMaxRunningLocalSubagents())return;this.runningLocalSubagentRunCount+=1;let e=!1;return()=>{e||(e=!0,this.runningLocalSubagentRunCount-=1)}}toHostError(t,e){const n=t instanceof Error?t.message:String(t);return new Xel(n,{agentId:e,cause:t})}}}}),dSl,p9f=L({\"codebaseReference.js\"(){\"use strict\";E(),kt(),dSl=Qn(\"codebaseReferenceService\")}}),uPn,F2i=L({\"agentSkills.js\"(){\"use strict\";E(),kt(),uPn=Qn(\"agentSkills"
+    }
+  ]
+}

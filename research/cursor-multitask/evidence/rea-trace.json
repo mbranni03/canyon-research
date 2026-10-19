@@ -1,0 +1,82 @@
+{
+  "evidence_id": "ev_ffa2b03c7e4a6496a95d129e39834288f94490ce63deae8ed74e32adb5d9300a",
+  "subject": null,
+  "provider": {
+    "id": "rea-javascript-application-workflows",
+    "name": "REA JavaScript application workflows",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.application-feature-trace",
+  "operation": "trace_application_feature",
+  "parameters": {
+    "application_evidence_id": "ev_7a178f68882162cbe7980ae291376eaf629e3717502978849428ba32e05aac58",
+    "native_evidence_ids": [],
+    "seed": {
+      "kind": "string",
+      "value": "Multitask Mode Guidelines",
+      "match": "contains",
+      "case_sensitive": true
+    },
+    "direction": "outgoing"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "trace_id": "jatr_6c6342af02913df565184d2e5b9d43264611875f57faf5b7454c92310cf0fb07",
+    "source_evidence_id": "ev_7a178f68882162cbe7980ae291376eaf629e3717502978849428ba32e05aac58",
+    "source_graph_id": "jag_5bb208c1d2d4b52b892acbdcd8ae0412fb4989037d0ed03b57c6122bf797b121",
+    "seed": {
+      "kind": "string",
+      "value": "Multitask Mode Guidelines",
+      "match": "contains",
+      "case_sensitive": true
+    },
+    "direction": "outgoing",
+    "seed_matches": [],
+    "graph": null,
+    "paths": [],
+    "native_handoffs": [],
+    "summary": {
+      "matched_seeds": 0,
+      "traced_nodes": 0,
+      "traced_edges": 0,
+      "terminal_paths": 0,
+      "native_handoffs": 0,
+      "observed_facts": 0,
+      "inferred_facts": 0,
+      "unknown_facts": 0,
+      "unavailable_facts": 0
+    },
+    "coverage": {
+      "status": "no-match",
+      "source_graph_status": "partial",
+      "total_seed_matches": 0
+    },
+    "evidence_links": [
+      "ev_7a178f68882162cbe7980ae291376eaf629e3717502978849428ba32e05aac58"
+    ],
+    "limitations": [
+      "No graph entity matched the literal seed; this is not evidence that the feature is absent.",
+      "The source application graph is incomplete; unmatched seeds and frontiers remain unknown."
+    ]
+  },
+  "confidence": "inferred",
+  "authority": "analyst-inference",
+  "environment": null,
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "No graph entity matched the literal seed; this is not evidence that the feature is absent.",
+    "The source application graph is incomplete; unmatched seeds and frontiers remain unknown."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": [
+    "ev_7a178f68882162cbe7980ae291376eaf629e3717502978849428ba32e05aac58"
+  ],
+  "publication_note": {
+    "status": "public-redacted-derivative",
+    "changes": "Local application root paths are represented as <CURSOR_APP_ROOT>; this publication note was added.",
+    "identity": "Retained Evidence IDs and embedded digests identify original records or source artifacts, not these modified public JSON bytes. Use SHA256SUMS to verify the public files.",
+    "original_records": "Original complete REA export is retained locally and omitted from this repository."
+  }
+}
