@@ -6,6 +6,8 @@ This adapts the [Cursor multitask research](../cursor-multitask/README.md) into 
 
 For an application that runs Claude CLI, the [native task UI specification](native-task-ui-spec.md) describes creating a progress list for every query and updating a custom card from confirmed `TaskCreate`/`TaskUpdate` results in the JSON stream, without MCP.
 
+The [context usage tracking specification](context-usage-tracking-spec.md) describes a context meter using native SDK summaries with a raw CLI fallback, including refresh rules, compaction, stale readings, and acceptance tests.
+
 ## What transfers from Cursor
 
 Cursor's useful pattern is organizational: keep one conversation responsible for the user's goals, hand substantial work to a worker, and bring results back for integration. Reproduce that relationship before reproducing implementation machinery.

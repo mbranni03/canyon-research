@@ -25,6 +25,8 @@ This is documentation and untested example configuration, supported by official 
 
 The [native task UI specification](research/claude-code-multitask/native-task-ui-spec.md) describes per-query progress cards in a custom app using Claude CLI's native tasks and JSON stream, including early list creation, confirmed updates, persistence, and interruption handling without MCP.
 
+The [context usage tracking specification](research/claude-code-multitask/context-usage-tracking-spec.md) covers a context meter backed by native SDK summaries, a raw CLI fallback, refresh and compaction handling, and acceptance tests.
+
 ## Provenance
 
 This is independent research and is not affiliated with or endorsed by Cursor or Anthropic. Third-party excerpts are included for analysis and retain their original ownership. This repository grants no rights to third-party source excerpts or artifacts. No source-code license grant is provided.
