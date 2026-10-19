@@ -1,0 +1,200 @@
+[
+  {
+    "id": "S1 \u2014 Disclosure labels, count, denied badge, accessible toggle",
+    "path": "webview/assets/collapsed-turn-disclosure-5ab38617e1bb.js",
+    "source_byte_start": 396,
+    "source_byte_end": 4227,
+    "archive_byte_start": 136266049,
+    "archive_byte_end": 136269880,
+    "excerpt_sha256": "95a8e6b202f929c1a31426f4f9398ee313348cc252f7aece5c84adcdfa271bab"
+  },
+  {
+    "id": "S2 \u2014 Collapsible/persistent partition",
+    "path": "webview/assets/sites-end-resource-8a7a3656de67.js",
+    "source_byte_start": 365737,
+    "source_byte_end": 367269,
+    "archive_byte_start": 470811000,
+    "archive_byte_end": 470812532,
+    "excerpt_sha256": "01d233fb2a4012691dd32bfeda92326747ec4e2367b8db3617adc07044ab3d39"
+  },
+  {
+    "id": "S3 \u2014 Eligibility, default state, count, empty-section guards",
+    "path": "webview/assets/sites-end-resource-8a7a3656de67.js",
+    "source_byte_start": 368433,
+    "source_byte_end": 372471,
+    "archive_byte_start": 470813696,
+    "archive_byte_end": 470817734,
+    "excerpt_sha256": "095535b782fc2fbc6b1c2563172d0e01789b22f1823db160bd0b6515050629a6"
+  },
+  {
+    "id": "S4 \u2014 Toggle lifecycle, motion, inert preload, denial scroll",
+    "path": "webview/assets/sites-end-resource-8a7a3656de67.js",
+    "source_byte_start": 372471,
+    "source_byte_end": 376274,
+    "archive_byte_start": 470817734,
+    "archive_byte_end": 470821537,
+    "excerpt_sha256": "0e5299e2f237e88e9d525240f77819a40f71971535a4f249bdd3ccd92ad2b945"
+  },
+  {
+    "id": "S5 \u2014 Initial prompts, activity, blocking requests, final item split",
+    "path": "webview/assets/split-items-into-render-groups-cc782c6c04ea.js",
+    "source_byte_start": 317,
+    "source_byte_end": 7023,
+    "archive_byte_start": 484384605,
+    "archive_byte_end": 484391311,
+    "excerpt_sha256": "b9a1ac499fa0b4ced88f3ce4b53720606d348cc56d928f92a504a336f780bc52"
+  },
+  {
+    "id": "S6 \u2014 Structured work status labels and clock",
+    "path": "webview/assets/app-primary-b4ce9e46e8cf.js",
+    "source_byte_start": 842337,
+    "source_byte_end": 846109,
+    "archive_byte_start": 71558858,
+    "archive_byte_end": 71562630,
+    "excerpt_sha256": "210d70ab5e1486a0ba06d19651fcbe6b6209217ca735b7582541e209cdf1f230"
+  },
+  {
+    "id": "S7 \u2014 Whole-second localized duration formatting",
+    "path": "webview/assets/app-initial-90eb42395b7d.js",
+    "source_byte_start": 13284901,
+    "source_byte_end": 13285846,
+    "archive_byte_start": 69255662,
+    "archive_byte_end": 69256607,
+    "excerpt_sha256": "83d1902cae23cc3907b9ae7fc51285f05eb2c6cb8b04a1c64e7d885de321d2e7"
+  },
+  {
+    "id": "S8 \u2014 Qualifying final assistant predicate",
+    "path": "webview/assets/app-initial-90eb42395b7d.js",
+    "source_byte_start": 3503169,
+    "source_byte_end": 3503485,
+    "archive_byte_start": 59473930,
+    "archive_byte_end": 59474246,
+    "excerpt_sha256": "40b566c0f4ffaa028c37c32bfbbd5b0af9b08fd4fff54a0a259aabcbaeb2ddc6"
+  },
+  {
+    "id": "S9 \u2014 Structured work item generation",
+    "path": "webview/assets/app-initial-90eb42395b7d.js",
+    "source_byte_start": 3527670,
+    "source_byte_end": 3528085,
+    "archive_byte_start": 59498431,
+    "archive_byte_end": 59498846,
+    "excerpt_sha256": "e5972441f0d134e004915a2052b40b7ba331b6476b561bb7a7ca8d7146dae529"
+  },
+  {
+    "id": "S10 \u2014 Work timing inputs",
+    "path": "webview/assets/app-initial-90eb42395b7d.js",
+    "source_byte_start": 3577522,
+    "source_byte_end": 3577936,
+    "archive_byte_start": 59548283,
+    "archive_byte_end": 59548697,
+    "excerpt_sha256": "67488d34b62ae8b0dd17c08e9c8ee146ede9c3ebc6c9c6eec950369420c7d193"
+  },
+  {
+    "id": "S11 \u2014 Duration endpoint and work-start eligibility",
+    "path": "webview/assets/app-initial-90eb42395b7d.js",
+    "source_byte_start": 3581673,
+    "source_byte_end": 3582812,
+    "archive_byte_start": 59552434,
+    "archive_byte_end": 59553573,
+    "excerpt_sha256": "187a9f9479000eea005a1eb160243a18ba314d64b5a4fcca7d7e36c432bc4dbb"
+  },
+  {
+    "id": "S12 \u2014 Turn-level disclosure route and exceptions",
+    "path": "webview/assets/local-conversation-turn-918111aed944.js",
+    "source_byte_start": 76453,
+    "source_byte_end": 77534,
+    "archive_byte_start": 296786347,
+    "archive_byte_end": 296787428,
+    "excerpt_sha256": "ddda4d0d879e1825fbd34e37e1b177a8915bad12cfd47859b864271af853106d"
+  },
+  {
+    "id": "S13 \u2014 Latest-mode visible activity filtering",
+    "path": "webview/assets/inline-followup-markdown-8cb3de7e61c6.js",
+    "source_byte_start": 19949,
+    "source_byte_end": 20138,
+    "archive_byte_start": 258582404,
+    "archive_byte_end": 258582593,
+    "excerpt_sha256": "5f77ea5ab8af824f90a2fb1cb513115faa1752ed8cb2bba9e747b5a7a85c032f"
+  },
+  {
+    "id": "S14 \u2014 Dynamic-tool persistence opt-in",
+    "path": "webview/assets/agent-activity-item-52caeab690d6.js",
+    "source_byte_start": 19880,
+    "source_byte_end": 19947,
+    "archive_byte_start": 46150328,
+    "archive_byte_end": 46150395,
+    "excerpt_sha256": "7421ed9f0cca80dad6e9fbe6172d7d78638692729f7d832a332a4f1d0beb8ba2"
+  },
+  {
+    "id": "S15 \u2014 Specific MCP approval-policy error persistence",
+    "path": "webview/assets/mcp-tool-call-approval-e50f8e2c4339.js",
+    "source_byte_start": 1792,
+    "source_byte_end": 1920,
+    "archive_byte_start": 312503907,
+    "archive_byte_end": 312504035,
+    "excerpt_sha256": "a2960a2a9dc8588eddad6a9cf53d7ec66792dda18c55fe44c7c214a518f8c5ae"
+  },
+  {
+    "id": "S16 \u2014 Interrupted-by-client duration compatibility branch",
+    "path": "webview/assets/local-conversation-turn-918111aed944.js",
+    "source_byte_start": 59558,
+    "source_byte_end": 59703,
+    "archive_byte_start": 296769452,
+    "archive_byte_end": 296769597,
+    "excerpt_sha256": "0caaadc3c9bdc4d0f21f29656852ce331dddd6ff2645291393b8b7948370b917"
+  },
+  {
+    "id": "S17 \u2014 Running, cancelled and structured-terminal flag definitions",
+    "path": "webview/assets/local-conversation-turn-918111aed944.js",
+    "source_byte_start": 58366,
+    "source_byte_end": 58636,
+    "archive_byte_start": 296768260,
+    "archive_byte_end": 296768530,
+    "excerpt_sha256": "fd13f77d264307aa2546de95fbacd0887d8316149ff3401888fe1028abf97429"
+  },
+  {
+    "id": "S18 \u2014 Activity-context early-collapse flag",
+    "path": "webview/assets/local-conversation-turn-918111aed944.js",
+    "source_byte_start": 60526,
+    "source_byte_end": 60595,
+    "archive_byte_start": 296770420,
+    "archive_byte_end": 296770489,
+    "excerpt_sha256": "a02f392e4d433102a3462e36914d03eb7345d65cfa12ca1b93bd933e8fac41f9"
+  },
+  {
+    "id": "S19 \u2014 Disclosure click identifies denial badge",
+    "path": "webview/assets/sites-end-resource-8a7a3656de67.js",
+    "source_byte_start": 367269,
+    "source_byte_end": 368342,
+    "archive_byte_start": 470812532,
+    "archive_byte_end": 470813605,
+    "excerpt_sha256": "bd86755c90bc9e8688c302a91d2283295b5b2f5edbd9c7fa5b357938f0794b22"
+  },
+  {
+    "id": "S20 \u2014 Formatter imported local binding",
+    "path": "webview/assets/app-primary-b4ce9e46e8cf.js",
+    "source_byte_start": 49542,
+    "source_byte_end": 49552,
+    "archive_byte_start": 70766063,
+    "archive_byte_end": 70766073,
+    "excerpt_sha256": "efd6e2b52e5476ba77117ca132f7dab797f4a81a10a5c084eb6abdeca53d6591"
+  },
+  {
+    "id": "S21 \u2014 Formatter exported binding",
+    "path": "webview/assets/app-initial-90eb42395b7d.js",
+    "source_byte_start": 14313796,
+    "source_byte_end": 14313806,
+    "archive_byte_start": 70284557,
+    "archive_byte_end": 70284567,
+    "excerpt_sha256": "6dcbff21aa4039290f0029a6671a5b1ba1c1e9aeaaf1d7b6c8af499294c6a478"
+  },
+  {
+    "id": "S22 \u2014 Formatter import declaration module source",
+    "path": "webview/assets/app-primary-b4ce9e46e8cf.js",
+    "source_byte_start": 71457,
+    "source_byte_end": 71545,
+    "archive_byte_start": 70787978,
+    "archive_byte_end": 70788066,
+    "excerpt_sha256": "1baa52242b634c71bb26ed6b4018abc98d0ad797b20b2f976520377b0b5ad265"
+  }
+]

@@ -16,4 +16,6 @@ The [selected local help capture](evidence/local-cli-help.txt) comes from Claude
 
 The CLI reference documents some flags omitted from local help. Conversely, local interface wording is not a live test of combinations. Notably, the inspected permission choices include `manual`, while online documentation also describes `default`. No example depends on resolving that discrepancy.
 
+The [work disclosure stream-contract ledger](evidence/work-disclosure-stream-contracts.md) records additional official streaming, result, permission, and thinking contracts used by the [collapsed work UI implementation spec](working-disclosure-implementation-spec.md). It separates published SDK protocol declarations from compatibility with the installed CLI and marks final-answer classification and timing fallbacks as application policies.
+
 The [Cursor report](../cursor-multitask/README.md) supplies the pattern being adapted, not evidence of Claude behavior. Cursor-specific tool arguments are not used as Claude APIs. Runtime completion timing, concurrency, cancellation, recovery, and template effectiveness remain unverified. No third-party source code is distributed in this Claude adaptation.

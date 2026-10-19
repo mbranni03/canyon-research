@@ -27,6 +27,12 @@ The [native task UI specification](research/claude-code-multitask/native-task-ui
 
 The [context usage tracking specification](research/claude-code-multitask/context-usage-tracking-spec.md) covers a context meter backed by native SDK summaries, a raw CLI fallback, refresh and compaction handling, and acceptance tests.
 
+The [collapsed work UI implementation specification](research/claude-code-multitask/working-disclosure-implementation-spec.md) adapts Codex’s Working / Worked for… disclosure to Claude Code’s JSON stream, including incremental text, tool grouping, final-answer reconciliation, timing, interruption, and acceptance tests.
+
+## Codex conversation work disclosure
+
+The [Working / Worked for… behavior specification](research/codex-work-disclosure/working-disclosure-spec.md) describes how Codex folds intermediate conversation activity into an expandable work section while keeping the answer readable. It records grouping, status labels, duration, disclosure state, exceptions, and acceptance scenarios, with packaged-source evidence and explicit limits.
+
 ## Provenance
 
-This is independent research and is not affiliated with or endorsed by Cursor or Anthropic. Third-party excerpts are included for analysis and retain their original ownership. This repository grants no rights to third-party source excerpts or artifacts. No source-code license grant is provided.
+This is independent research and is not affiliated with or endorsed by Cursor, Anthropic, or OpenAI. Third-party excerpts are included for analysis and retain their original ownership. This repository grants no rights to third-party source excerpts or artifacts. No source-code license grant is provided.

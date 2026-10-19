@@ -1,0 +1,139 @@
+{
+  "artifact": "/Applications/ChatGPT.app/Contents/Resources/app.asar",
+  "artifact_sha256": "5ddc4e48259aa6f979e04529b1a5a4ae54b0f5c4ad6db5c6e004924c10916ddb",
+  "observed_version": "26.1013.40934",
+  "observed_build": "20770",
+  "bundle_id": "com.openai.codex",
+  "method": "Read-only custom ASAR header parser; UTF-8 source excerpts verified against archived bytes. Offsets are zero-based half-open byte ranges, not minified column offsets. Original JavaScript never executed.",
+  "files": [
+    {
+      "path": "webview/assets/collapsed-turn-disclosure-5ab38617e1bb.js",
+      "archive_byte_start": 136265653,
+      "byte_length": 4404,
+      "sha256": "a76e6f1305affa6bb86e3648f738a7edafaec72e02847e69467f4f15a5920f67",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "a76e6f1305affa6bb86e3648f738a7edafaec72e02847e69467f4f15a5920f67",
+        "blockSize": 4194304,
+        "blocks": [
+          "a76e6f1305affa6bb86e3648f738a7edafaec72e02847e69467f4f15a5920f67"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/local-conversation-turn-918111aed944.js",
+      "archive_byte_start": 296709894,
+      "byte_length": 91131,
+      "sha256": "e2cf6ae80f17f98408c9d8baaea6506bae08419e6ddf02f0130b2682f44a2058",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "e2cf6ae80f17f98408c9d8baaea6506bae08419e6ddf02f0130b2682f44a2058",
+        "blockSize": 4194304,
+        "blocks": [
+          "e2cf6ae80f17f98408c9d8baaea6506bae08419e6ddf02f0130b2682f44a2058"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/sites-end-resource-8a7a3656de67.js",
+      "archive_byte_start": 470445263,
+      "byte_length": 417582,
+      "sha256": "9555d47e164354901241b4ce20f8bfc4ca2abbabc7fccf907e0370cab08b6eb1",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "9555d47e164354901241b4ce20f8bfc4ca2abbabc7fccf907e0370cab08b6eb1",
+        "blockSize": 4194304,
+        "blocks": [
+          "9555d47e164354901241b4ce20f8bfc4ca2abbabc7fccf907e0370cab08b6eb1"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/split-items-into-render-groups-cc782c6c04ea.js",
+      "archive_byte_start": 484384288,
+      "byte_length": 7023,
+      "sha256": "12a6529947ffe832c1cf2d9e6ac03ea1a109fd81a4fef015a710eed7dcfcec56",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "12a6529947ffe832c1cf2d9e6ac03ea1a109fd81a4fef015a710eed7dcfcec56",
+        "blockSize": 4194304,
+        "blocks": [
+          "12a6529947ffe832c1cf2d9e6ac03ea1a109fd81a4fef015a710eed7dcfcec56"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/app-primary-b4ce9e46e8cf.js",
+      "archive_byte_start": 70716521,
+      "byte_length": 2435976,
+      "sha256": "4d70785315494e1be83d5c4b47ac0a45dcfedde43f2d25ce0f111aedf7ae2350",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "4d70785315494e1be83d5c4b47ac0a45dcfedde43f2d25ce0f111aedf7ae2350",
+        "blockSize": 4194304,
+        "blocks": [
+          "4d70785315494e1be83d5c4b47ac0a45dcfedde43f2d25ce0f111aedf7ae2350"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/app-initial-90eb42395b7d.js",
+      "archive_byte_start": 55970761,
+      "byte_length": 14403934,
+      "sha256": "2687d59e8c67ccf81c7efb3820211070df303c6a200c9e0e8d604f26253f2f5e",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "2687d59e8c67ccf81c7efb3820211070df303c6a200c9e0e8d604f26253f2f5e",
+        "blockSize": 4194304,
+        "blocks": [
+          "e5e7de348c9b096fb99d44b1465655d0bb9d9acaf6f74d5d9cb8ba62ae4e3c0d",
+          "b90947216fcfeca29c90d18a77f48a5bb3a57ba9ab83cdecdeec72ba1358aef1",
+          "5c661b4da42049b6e8e0e1046bb4e8e9ec3b7f021df678129d5fe9dc9b207cb8",
+          "7abc3d54f6c34197fceea68971db7144a59b0700eab806e3846bd94866fdeb91"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/inline-followup-markdown-8cb3de7e61c6.js",
+      "archive_byte_start": 258562455,
+      "byte_length": 23190,
+      "sha256": "d4872dbed8c561f314819642bdd679f86ad86467573a1c942eebabe1a984943c",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "d4872dbed8c561f314819642bdd679f86ad86467573a1c942eebabe1a984943c",
+        "blockSize": 4194304,
+        "blocks": [
+          "d4872dbed8c561f314819642bdd679f86ad86467573a1c942eebabe1a984943c"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/agent-activity-item-52caeab690d6.js",
+      "archive_byte_start": 46130448,
+      "byte_length": 22818,
+      "sha256": "3db7d74b7fc7348c05187967b9dd2c13877109220aeccc25a3cad4c15af2b882",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "3db7d74b7fc7348c05187967b9dd2c13877109220aeccc25a3cad4c15af2b882",
+        "blockSize": 4194304,
+        "blocks": [
+          "3db7d74b7fc7348c05187967b9dd2c13877109220aeccc25a3cad4c15af2b882"
+        ]
+      }
+    },
+    {
+      "path": "webview/assets/mcp-tool-call-approval-e50f8e2c4339.js",
+      "archive_byte_start": 312502115,
+      "byte_length": 2057,
+      "sha256": "aae23eed7bacc77f12d10ebfbac0079e6cf9c740bc4e83bb89051d50dda38d39",
+      "declared_integrity": {
+        "algorithm": "SHA256",
+        "hash": "aae23eed7bacc77f12d10ebfbac0079e6cf9c740bc4e83bb89051d50dda38d39",
+        "blockSize": 4194304,
+        "blocks": [
+          "aae23eed7bacc77f12d10ebfbac0079e6cf9c740bc4e83bb89051d50dda38d39"
+        ]
+      }
+    }
+  ]
+}

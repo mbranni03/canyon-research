@@ -8,6 +8,8 @@ For an application that runs Claude CLI, the [native task UI specification](nati
 
 The [context usage tracking specification](context-usage-tracking-spec.md) describes a context meter using native SDK summaries with a raw CLI fallback, including refresh rules, compaction, stale readings, and acceptance tests.
 
+The [collapsed work UI implementation specification](working-disclosure-implementation-spec.md) adapts the [Codex disclosure research](../codex-work-disclosure/working-disclosure-spec.md) to Claude Code’s JSON stream. It specifies activity grouping, streamed answer candidates, authoritative turn completion, elapsed work time, and recovery behavior.
+
 ## What transfers from Cursor
 
 Cursor's useful pattern is organizational: keep one conversation responsible for the user's goals, hand substantial work to a worker, and bring results back for integration. Reproduce that relationship before reproducing implementation machinery.
