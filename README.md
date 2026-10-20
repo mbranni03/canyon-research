@@ -29,6 +29,10 @@ The [context usage tracking specification](research/claude-code-multitask/contex
 
 The [collapsed work UI implementation specification](research/claude-code-multitask/working-disclosure-implementation-spec.md) adapts Codex’s Working / Worked for… disclosure to Claude Code’s JSON stream, including incremental text, tool grouping, final-answer reconciliation, timing, interruption, and acceptance tests.
 
+## Changes card kit
+
+The [changes card kit](research/changes-card/README.md) packages the "N Files Changed" card shown under a finished agent turn. It is ported from UnifiedApp's desktop app and includes every file-type icon, shared light/dark styling, prop-driven Vue components, and a sample gallery of all states. Its [Claude CLI change-tracking guide](research/changes-card/claude-cli-change-tracking.md) explains how to build the card's rows from `stream-json` events, a `PostToolUse` hook ledger, or a git baseline. The field shapes were checked against a real Claude Code 2.1.304 run.
+
 ## Codex conversation work disclosure
 
 The [Working / Worked for… behavior specification](research/codex-work-disclosure/working-disclosure-spec.md) describes how Codex folds intermediate conversation activity into an expandable work section while keeping the answer readable. It records grouping, status labels, duration, disclosure state, exceptions, and acceptance scenarios, with packaged-source evidence and explicit limits.

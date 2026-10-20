@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Changes Card Samples</title>
+<link rel="stylesheet" href="styles/changes-card.css">
+<style>
+  :root { --page: #f6f7fb; --panel: #ffffff; }
+  [data-theme="dark"] { --page: #0f1117; --panel: #161922; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme]) { --page: #0f1117; --panel: #161922; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 32px 16px 64px; background: var(--page); color: var(--text); font: 13px/1.45 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; }
+  header.page { display: flex; align-items: baseline; gap: 12px; margin-bottom: 28px; }
+  h1 { margin: 0; font-size: 18px; font-weight: 600; }
+  h2 { margin: 36px 0 12px; color: var(--text-muted); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .grow { flex: 1; }
+  .toggle { padding: 4px 10px; border: 1px solid var(--border-soft); border-radius: 7px; background: var(--panel); color: var(--text-soft); font: inherit; font-size: 12px; cursor: pointer; }
+  .thread { display: grid; gap: 14px; }
+  .reply { color: var(--text-soft); font-size: 13.5px; margin: 0; }
+  .sample { display: grid; gap: 8px; padding: 18px; border-radius: 14px; background: var(--panel); }
+  .label { color: var(--text-muted); font-size: 11.5px; }
+  .icons { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 4px; padding: 10px; border-radius: 14px; background: var(--panel); }
+  .icon { display: flex; align-items: center; gap: 9px; padding: 6px 8px; border-radius: 6px; }
+  .icon:hover { background: var(--hover-bg); }
+  .icon code { color: var(--text); font: 12px var(--font-mono); }
+  .icon small { margin-left: auto; color: var(--text-faint); font-size: 10.5px; }
+</style>
+</head>
+<body>
+<main>
+  <header class="page">
+    <h1>Changes card</h1>
+    <span class="label">samples · icons · states</span>
+    <span class="grow"></span>
+    <button class="toggle" id="theme" type="button">Toggle theme</button>
+  </header>
+
+  <h2>In the thread</h2>
+  <div class="thread">
+    <p class="reply">Added the retry wrapper and moved the client config into its own module. Tests pass locally.</p>
+    <div data-card="typical"></div>
+  </div>
+
+  <h2>States</h2>
+  <div class="thread" id="states"></div>
+
+  <h2>File-type icons</h2>
+  <div class="icons" id="icons"></div>
+</main>
+
+<script type="module">
+import { iconFor, BY_EXT, BY_NAME, IMAGE_EXTS, JSON_EXTS } from './lib/fileIcons.js'
+import { changedTitle, labelPaths, splitRows } from './lib/changeList.js'
+
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
+const UNDO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg>'
+
+function icon(path, opts = {}, size = 12) {
+  const i = iconFor(path, opts)
+  // Absolute: a relative url() inside a custom property resolves against the stylesheet, not the page.
+  const src = new URL(`icons/${i.file}`, location.href).href
+  if (i.kind === 'img') return `<img class="fti${i.mono ? ' is-mono' : ''}" src="${src}" width="${size}" height="${size}" alt="" aria-hidden="true">`
+  return `<span class="fti fti--glyph fti--${i.tone}" style="width:${size}px;height:${size}px;--fti-src:url(${src})" aria-hidden="true"></span>`
+}
+
+function rows(files, max = 8) {
+  const { rows, hidden } = splitRows(files, max)
+  const labels = labelPaths(rows.map((f) => f.path))
+  return `<div class="cs__list${hidden ? ' cs__list--more' : ''}">${rows.map((f, i) => `
+    <button type="button" class="cs__row" title="${esc(f.path)}">
+      ${icon(f.path, { submodule: f.submodule })}
+      <span class="cs__name">${esc(labels[i])}</span>
+      ${f.status === 'A' || f.status === '?' ? '<span class="cs__new">new</span>' : ''}
+      ${f.binary ? '<span class="cs__bin">binary</span>' : f.insertions == null ? '' : `<span class="cs-add">+${f.insertions}</span><span class="cs-del">${f.deletions ? `−${f.deletions}` : ''}</span>`}
+    </button>`).join('')}
+    ${hidden ? `<p class="cs__more">+${hidden} more</p>` : ''}</div>`
+}
+
+function card({ files = [], undone = false, committed = '', busy = false, error = '' }) {
+  const title = !files.length ? 'Changes undone' : committed ? `${changedTitle(files.length)} · Committed` : changedTitle(files.length)
+  return `<section class="scc" aria-label="Files changed by this response">
+    <header class="scc__head">
+      <span class="scc__title">${title}</span><span class="scc__grow"></span>
+      ${committed ? '' : `<button type="button" class="scc__undo${undone ? ' is-redo' : ''}" ${busy ? 'disabled' : ''} aria-label="${undone ? 'Restore the undone changes' : 'Undo these changes'}" title="${undone ? 'Restore the undone changes' : 'Undo these changes'}">${UNDO}</button>`}
+      ${files.length ? `<button type="button" class="scc__action" ${busy ? 'disabled' : ''}>Review</button>` : ''}
+    </header>
+    ${files.length ? rows(files) : ''}
+    ${error ? `<p class="scc__err" role="status">${esc(error)}</p>` : ''}
+  </section>`
+}
+
+const f = (path, insertions, deletions, status = 'M', extra = {}) => ({ path, status, insertions, deletions, ...extra })
+const typical = [
+  f('src/lib/retry.ts', 48, 0, 'A'),
+  f('src/api/client.ts', 12, 31),
+  f('src/api/config.ts', 26, 0, 'A'),
+  f('src/components/Settings.vue', 4, 2),
+]
+const many = [
+  f('apps/desktop/src/App.vue', 3, 1), f('apps/desktop/src-tauri/src/main.rs', 40, 12),
+  f('src/ui/index.ts', 2, 0), f('src/api/index.ts', 5, 1),
+  f('README.md', 18, 4), f('styles/app.scss', 9, 9), f('scripts/release.sh', 7, 0, 'A'),
+  f('docker/Dockerfile', 2, 2), f('config/settings.yaml', 1, 1), f('server/main.go', 30, 6),
+  f('tools/gen.py', 14, 0, 'A'),
+]
+const kinds = [
+  f('public/hero.png', 0, 0, 'A', { binary: true }),
+  f('assets/logo.svg', 12, 0, 'A'),
+  f('tsconfig.json', 2, 1),
+  f('.gitignore', 1, 0),
+  f('vendor/sdk', 1, 1, 'M', { submodule: true }),
+  f('.env.example', 3, 0, '?'),
+  f('src/old/legacy.ts', 0, 88, 'D'),
+]
+const pending = [f('src/lib/retry.ts', null, null, 'A'), f('src/api/client.ts', null, null)]
+
+const STATES = [
+  ['One file', card({ files: [f('src/server.ts', 7, 2)] })],
+  ['Many files — folds past 8 into "+N more" (never hides just one)', card({ files: many })],
+  ['Duplicate names get their parent directory back', card({ files: [f('src/ui/index.ts', 4, 0), f('src/api/index.ts', 1, 1), f('src/App.vue', 2, 2)] })],
+  ['Binary, image, JSON, .gitignore, submodule, untracked, deleted', card({ files: kinds })],
+  ['Ledger names before the diff read lands (no counts yet)', card({ files: pending })],
+  ['Busy (undo / review disabled while the ledger writes)', card({ files: typical.slice(0, 2), busy: true })],
+  ['Undone — the undo arrow mirrors into restore', card({ undone: true })],
+  ['Committed receipt — review only, no undo', card({ files: typical.slice(0, 3), committed: 'a1b2c3d' })],
+  ['Error line', card({ files: typical.slice(1, 2), committed: 'a1b2c3d', error: 'The saved diff is unavailable. The documented file list is still preserved.' })],
+]
+
+document.querySelector('[data-card="typical"]').innerHTML = card({ files: typical })
+document.getElementById('states').innerHTML = STATES.map(([label, html]) => `<div class="sample"><span class="label">${label}</span>${html}</div>`).join('')
+
+const samples = [
+  ...Object.keys(BY_EXT).map((ext) => [`file.${ext}`, `.${ext}`]),
+  ...Object.keys(BY_NAME).map((name) => [name === 'dockerfile' ? 'Dockerfile' : name, 'name']),
+  ['.gitignore', 'name'],
+  ...[...JSON_EXTS].map((ext) => [`data.${ext}`, `.${ext}`]),
+  ...[...IMAGE_EXTS].map((ext) => [`image.${ext}`, `.${ext}`]),
+  ['vendor/sdk', 'submodule', { submodule: true }],
+  ['src', 'folder', { folder: true }],
+  ['LICENSE', 'fallback'],
+]
+document.getElementById('icons').innerHTML = samples
+  .map(([path, label, opts]) => `<div class="icon" title="${esc(iconFor(path, opts).file)}">${icon(path, opts, 16)}<code>${esc(label)}</code><small>${esc(iconFor(path, opts).file.split('/').pop().replace('-original.svg', '').replace('.svg', ''))}</small></div>`)
+  .join('')
+
+const root = document.documentElement
+document.getElementById('theme').addEventListener('click', () => {
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+  root.dataset.theme = dark ? 'light' : 'dark'
+})
+</script>
+</body>
+</html>

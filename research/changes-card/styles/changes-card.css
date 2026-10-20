@@ -1,0 +1,290 @@
+/*
+ * Changes card — the "N Files Changed" block under a finished agent turn.
+ * Values match UnifiedApp's desktop card (SessionChangesCard, ChangeRows,
+ * FileTypeIcon). Drop the :root token block if your app already defines these.
+ */
+
+:root {
+  --text: #12141a;
+  --text-soft: #475569;
+  --text-muted: #94a3b8;
+  --text-faint: #cbd5e1;
+  --text-accent: #6366f1;
+  --border-soft: #f1f5f9;
+  --hover-bg: rgba(15, 23, 42, 0.04);
+  --focus-ring: rgba(99, 102, 241, 0.45);
+  --green: #3fa66c;
+  --red: #ff5275;
+  --json: #e8a33d;
+  --fs-base: 12.5px;
+  --fs-sm: 11.5px;
+  --fs-xs: 10px;
+  --fs-2xs: 9px;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+}
+
+[data-theme="dark"] {
+  --text: #e8eaef;
+  --text-soft: #94a3b8;
+  --text-muted: #64748b;
+  --text-faint: #4a5365;
+  --text-accent: #818cf8;
+  --border-soft: #232323;
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --focus-ring: rgba(129, 140, 248, 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --text: #e8eaef;
+    --text-soft: #94a3b8;
+    --text-muted: #64748b;
+    --text-faint: #4a5365;
+    --text-accent: #818cf8;
+    --border-soft: #232323;
+    --hover-bg: rgba(255, 255, 255, 0.05);
+    --focus-ring: rgba(129, 140, 248, 0.55);
+  }
+}
+
+/* ── Card ──────────────────────────────────────────────────────────────── */
+
+.scc {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 0 8px;
+  border: 1px solid var(--border-soft);
+  border-radius: 13px;
+  animation: scc-in 160ms ease-out;
+}
+
+@keyframes scc-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scc {
+    animation: none;
+  }
+}
+
+.scc__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px 2px;
+}
+
+.scc__title {
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.scc__grow {
+  flex: 1;
+}
+
+.scc__action {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.scc__action:hover:not(:disabled) {
+  color: var(--text);
+}
+
+.scc__action:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+/* Undo; mirrored into a redo arrow once the changes are undone. The negative
+   margin keeps the 22px box from making the header taller. */
+.scc__undo {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 22px;
+  margin: -3px 0;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.scc__undo svg {
+  width: 14px;
+  height: 14px;
+}
+
+.scc__undo.is-redo svg {
+  transform: scaleX(-1);
+}
+
+.scc__undo:hover:not(:disabled) {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.scc__undo:disabled {
+  color: var(--text-faint);
+  cursor: default;
+}
+
+.scc__undo:focus-visible,
+.scc__action:focus-visible,
+.cs__row:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: -2px;
+}
+
+.scc__err {
+  margin: 2px 16px 0;
+  color: var(--red);
+  font-size: 12px;
+}
+
+/* ── Rows ──────────────────────────────────────────────────────────────── */
+
+.cs__list {
+  margin: 0 6px 6px;
+}
+
+.cs__list--more {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.cs__row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 10px 3px 10px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-family: inherit;
+  text-align: left;
+}
+
+button.cs__row {
+  cursor: pointer;
+}
+
+button.cs__row:hover {
+  background: var(--hover-bg);
+}
+
+.cs__name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  font-size: var(--fs-base);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* A file that was not here before — the one thing the type mark cannot say. */
+.cs__new {
+  flex: none;
+  color: var(--green);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.02em;
+}
+
+.cs__more {
+  margin: 0;
+  padding: 2px 10px 3px 10px;
+  color: var(--text-faint);
+  font-size: var(--fs-sm);
+}
+
+.cs__bin {
+  flex: none;
+  color: var(--text-faint);
+  font-size: var(--fs-xs);
+}
+
+.cs-add {
+  flex: none;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+}
+
+/* Fixed width so a row with no deletions keeps the counts below it aligned. */
+.cs-del {
+  flex: none;
+  width: 30px;
+  margin-left: -5px;
+  color: var(--red);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  text-align: left;
+}
+
+/* ── File-type icon ────────────────────────────────────────────────────── */
+
+.fti {
+  display: block;
+  flex: none;
+  color: var(--text-faint);
+}
+
+/* Glyphs are single-colour SVGs painted with currentColor through a mask. */
+.fti--glyph {
+  background: currentColor;
+  -webkit-mask: var(--fti-src) center / contain no-repeat;
+  mask: var(--fti-src) center / contain no-repeat;
+}
+
+/* A drawn picture glyph reads heavier than a brand mark, so it insets a pixel. */
+.fti--image {
+  box-sizing: border-box;
+  padding: 1px;
+  background-clip: content-box;
+  -webkit-mask-origin: content-box;
+  mask-origin: content-box;
+  color: var(--text-soft);
+}
+
+.fti--json {
+  color: var(--json);
+}
+
+.fti--folder {
+  color: var(--text-accent);
+}
+
+.fti--package {
+  color: var(--text-soft);
+}
+
+/* Devicon draws Markdown and Rust pure black; 0.88 lands them on the ink ramp. */
+[data-theme="dark"] .fti.is-mono {
+  filter: invert(0.88);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .fti.is-mono {
+    filter: invert(0.88);
+  }
+}
